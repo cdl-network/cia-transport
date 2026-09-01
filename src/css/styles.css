@@ -1,0 +1,239 @@
+@import './modules/variables.css';
+@import './modules/settings.css';
+@import './fonts.css';
+
+/* ==========================================================================
+	Tailwind Directives
+========================================================================== */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ==========================================================================
+	Hero Banner
+========================================================================== */
+
+.body-content .hero-banner__title {
+  line-height: 1.1;
+}
+
+
+/* ==========================================================================
+	Main Navigation
+========================================================================== */
+
+
+.main-menu a:hover:after,
+.main-menu .current-menu-item a:after {
+  bottom: -1.1rem;
+  opacity: 1;
+}
+
+
+.main-menu-toggle.is--active .menu-show {
+  opacity: 0 !important;
+}
+
+.main-menu-toggle.is--active .menu-close {
+  opacity: 1 !important;
+}
+
+.site-header--fixed {
+  background-color: #171b4a8f;
+}
+
+.site-header--fixed .logo {
+  width: 3rem;
+}
+
+
+/* ==========================================================================
+	Buttons
+========================================================================== */
+
+.btn {
+  background-color: #712E2C;
+  color: #FFF7ED;
+}
+
+.btn:hover,
+.btn.active {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+
+/* ==========================================================================
+	Tabs
+========================================================================== */
+
+.nav-tab {
+  position: relative;
+}
+
+.nav-tab::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: var(--secondary);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-tab.is-active::after {
+  transform: scaleX(1);
+}
+
+
+/* ==========================================================================
+	Footer
+========================================================================== */
+
+.site-footer .custom-logo {
+  max-width: 9rem;
+}
+
+.footer__links li {
+  position: relative;
+}
+
+.footer__links li:after {
+  content: "|";
+  position: absolute;
+  right: -1rem;
+  top: 0;
+}
+
+.footer__links li:last-child:after {
+  display: none;
+}
+
+
+/* ==========================================================================
+	Social Section
+========================================================================== */
+
+.social-section .social-icons {
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+.social-section .social-icons a {
+  background-color: #c39e5d;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ==========================================================================
+	Customize scrollbar
+========================================================================== */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: var(--tertiary);
+  border-radius: 3px;
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 3px;
+  transition: 500ms ease;
+}
+
+
+/* ==========================================================================
+	Common Reusable Classes
+========================================================================== */
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary);
+}
+
+.text-tertiary {
+  color: var(--tertiary);
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+.text-light {
+  color: var(--light);
+}
+
+.heading-font {
+  font-family: var(--heading-font);
+}
+
+.text-shadow {
+  text-shadow: 0 0 0.3rem rgba(0,0,0,0.1);
+}
+
+/* ==========================================================================
+	Media Queries
+========================================================================== */
+
+
+@media (max-width: 1280px) {
+
+  .site-header .main-navigation {
+    background-color: var(--primary);
+    opacity: 0;
+    padding: 8rem 4rem;
+    border: 0 !important;
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .site-header .main-navigation--active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+  }
+
+
+}
+
+
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+
+}

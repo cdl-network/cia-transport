@@ -1,0 +1,33 @@
+body {
+    font-family: var(--base-font);
+    line-height: 1.5;
+}
+
+.body-content h1, .body-content h2, .body-content h3, .body-content h4, .body-content h5, .body-content h6 {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    line-height: 1.35;
+}
+
+body p, body ul {
+    margin-bottom: 1.5rem;
+}
+
+body p:last-child {
+    margin-bottom: 0;
+}
+
+.section p:last-child, section p:last-child {
+    margin-bottom: 0;
+}
+
+body ul {
+    list-style-type: disc;
+    padding-left: 1rem;
+}
+
+@media (min-width: 1900px) {
+    html {
+        font-size: 1vw !important;
+    }
+}
