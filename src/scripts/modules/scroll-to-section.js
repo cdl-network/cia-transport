@@ -23,7 +23,7 @@ export function scrollToSection() {
       });
 
       // Update URL without jumping
-      history.pushState(null, '', hash);
+      // history.pushState(null, '', hash);
     });
   });
 }

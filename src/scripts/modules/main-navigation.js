@@ -14,4 +14,15 @@ export function mainNavigation() {
   close?.addEventListener('click', () => {
     navigation.classList.remove('main-navigation--active');
   });
+
+  // Close navigation when clicking an anchor link below 1200px
+  const anchorLinks = navigation.querySelectorAll('a[href^="#"]');
+
+  anchorLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth < 1200) {
+        navigation.classList.remove('main-navigation--active');
+      }
+    });
+  });
 }

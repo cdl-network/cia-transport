@@ -24,6 +24,17 @@
   <meta name="twitter:url" content="https://www.ciatransport.com">
   <meta name="twitter:card" content="summary">
 
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png">
+
   <!-- CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,11 +46,11 @@
 
 </head>
 
-<body class="text-xl text-tertiary leading-[1.3]">
+<body class="text-xl bg-light text-tertiary leading-[1.3]">
 
   <!-- Header -->
   <header class="site-header fixed w-full left-0 top-0 py-4 z-[5] font-medium">
-    <div class="mx-auto max-w-[100rem] px-8 flex items-center xl:items-start justify-between gap-8">
+    <div class="mx-auto max-w-[100rem] px-8 flex items-center justify-between gap-8">
 
       <!-- Logo -->
       <a href="/" class="inline-block text-4xl font-bold leading-none"><img class="logo transition-all duration-500"
@@ -47,7 +58,7 @@
       <!-- Logo -->
 
       <!-- Navigation -->
-      <div class="main-navigation xl:mt-8">
+      <div class="main-navigation">
 
         <nav class="max-h-[65vh] main-menu">
           <i
@@ -82,7 +93,7 @@
   <!-- Header -->
 
   <!-- Body Content -->
-  <div class="body-content overflow-hidden min-h-[81.4vh] bg-light">
+  <div class="body-content">
 
     <!-- Hero Banner -->
     <section
@@ -118,7 +129,7 @@
     <!-- Hero Banner -->
 
     <!-- About -->
-    <section id="about" class="bg-light overflow-hidden">
+    <section id="about" class="overflow-hidden">
 
       <div class="mx-auto md:grid items-center grid-cols-12 gap-8">
 
@@ -133,16 +144,16 @@
               details. We built this company on experienced drivers, and we pay like it.</p>
             <div class="flex items-center gap-8 justify-between text-center pt-7 text-primary">
               <div>
-                <strong class="block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow">40</strong>
+                <strong class="counter block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow">40</strong>
                 <span>Trucks</span>
               </div>
               <div>
-                <strong class="block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow">48</strong>
+                <strong class="counter block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow">48</strong>
                 <span>States</span>
               </div>
               <div>
                 <strong
-                  class="block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow">53'</strong>
+                  class="counter block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow">53'</strong>
                 <span>Trailers</span>
               </div>
             </div>
@@ -152,7 +163,7 @@
 
         <!-- Right Side -->
         <div class="md:col-span-6 mt-8 md:mt-0"><img class="parallax-element" data-orientation="down"
-            src="/images/who-we-are.png" alt="Who We Are"></div>
+            src="/images/who-we-are.jpg" alt="Who We Are"></div>
         <!-- Right Side -->
 
       </div>
@@ -310,7 +321,7 @@
     <!-- What We Offer -->
 
     <!-- Equipment -->
-    <section id="equipment" class="bg-light overflow-hidden py-[4rem] lg:py-[6rem] text-center">
+    <section id="equipment" class="overflow-hidden py-[4rem] lg:py-[6rem] text-center">
       <div class="mx-auto max-w-[100rem] px-8">
 
         <h2 class="text-4xl lg:text-6xl parallax-element uppercase text-primary font-bold mb-3">EQUIPMENT</h2>
@@ -341,92 +352,113 @@
           <!-- Outside -->
           <div id="outside" class="equipment-panel mt-8">
 
-            <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
 
-              <a href="/images/equipments/truck-img1.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="outside">
+              <a href="/images/equipments/outside/truck-outside1.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="outside">
 
-                <img src="/images/equipments/truck-img1.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/outside/truck-outside1.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
 
-              <a href="/images/equipments/truck-img2.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="outside">
+              <a href="/images/equipments/outside/truck-outside2.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="outside">
 
-                <img src="/images/equipments/truck-img2.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/outside/truck-outside2.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
-              <a href="/images/equipments/truck-img3.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="outside">
+              <a href="/images/equipments/outside/truck-outside3.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="outside">
 
-                <img src="/images/equipments/truck-img3.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/outside/truck-outside3.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
-              <a href="/images/equipments/truck-img4.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="outside">
+              <a href="/images/equipments/outside/truck-outside4.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="outside">
 
-                <img src="/images/equipments/truck-img4.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/outside/truck-outside4.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
-              <a href="/images/equipments/truck-img5.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="outside">
+              <a href="/images/equipments/outside/truck-outside5.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="outside">
 
-                <img src="/images/equipments/truck-img5.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/outside/truck-outside5.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
-              <a href="/images/equipments/truck-img6.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="outside">
+              <a href="/images/equipments/outside/truck-outside6.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="outside">
 
-                <img src="/images/equipments/truck-img6.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/outside/truck-outside6.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
-              <a href="/images/equipments/truck-img7.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="outside">
+              <a href="/images/equipments/outside/truck-outside7.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="outside">
 
-                <img src="/images/equipments/truck-img7.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/outside/truck-outside7.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
 
-              <a href="/images/equipments/truck-img8.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="outside">
+              <a href="/images/equipments/outside/truck-outside8.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="outside">
 
-                <img src="/images/equipments/truck-img8.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/outside/truck-outside8.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
-              <a href="/images/equipments/truck-img9.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="outside">
+              <a href="/images/equipments/outside/truck-outside9.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="outside">
 
-                <img src="/images/equipments/truck-img9.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/outside/truck-outside9.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
-              <a href="/images/equipments/truck-img10.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="outside">
+              <a href="/images/equipments/outside/truck-outside10.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="outside">
 
-                <img src="/images/equipments/truck-img10.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/outside/truck-outside10.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
-              <a href="/images/equipments/truck-img11.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="outside">
+              <a href="/images/equipments/outside/truck-outside11.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="outside">
 
-                <img src="/images/equipments/truck-img11.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/outside/truck-outside11.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
-              <a href="/images/equipments/truck-img12.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="outside">
+              <a href="/images/equipments/outside/truck-outside12.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="outside">
 
-                <img src="/images/equipments/truck-img12.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/outside/truck-outside12.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+              </a>
+
+              <a href="/images/equipments/outside/truck-outside13.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="outside">
+
+                <img src="/images/equipments/outside/truck-outside13.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+              </a>
+
+              <a href="/images/equipments/outside/truck-outside14.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="outside">
+
+                <img src="/images/equipments/outside/truck-outside14.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+              </a>
+
+              <a href="/images/equipments/outside/truck-outside15.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="outside">
+
+                <img src="/images/equipments/outside/truck-outside15.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
             </div>
@@ -437,91 +469,77 @@
           <!-- Inside -->
           <div id="inside" class="equipment-panel mt-8 hidden">
 
-            <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
 
-              <a href="/images/equipments/truck-img13.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="inside">
+              <a href="/images/equipments/inside/truck-inside1.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="inside">
 
-                <img src="/images/equipments/truck-img13.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/inside/truck-inside1.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
 
-              <a href="/images/equipments/truck-img14.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="inside">
+              <a href="/images/equipments/inside/truck-inside2.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="inside">
 
-                <img src="/images/equipments/truck-img14.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/inside/truck-inside2.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
-              <a href="/images/equipments/truck-img15.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="inside">
+              <a href="/images/equipments/inside/truck-inside3.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="inside">
 
-                <img src="/images/equipments/truck-img15.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/inside/truck-inside3.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
-              <a href="/images/equipments/truck-img16.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="inside">
+              <a href="/images/equipments/inside/truck-inside4.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="inside">
 
-                <img src="/images/equipments/truck-img16.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/inside/truck-inside4.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
-              <a href="/images/equipments/truck-img17.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="inside">
+              <a href="/images/equipments/inside/truck-inside5.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="inside">
 
-                <img src="/images/equipments/truck-img17.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/inside/truck-inside5.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
-              <a href="/images/equipments/truck-img18.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="inside">
+              <a href="/images/equipments/inside/truck-inside6.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="inside">
 
-                <img src="/images/equipments/truck-img18.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/inside/truck-inside6.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
-              <a href="/images/equipments/truck-img19.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="inside">
+              <a href="/images/equipments/inside/truck-inside7.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="inside">
 
-                <img src="/images/equipments/truck-img19.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/inside/truck-inside7.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
-              <a href="/images/equipments/truck-img20.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="inside">
+              <a href="/images/equipments/inside/truck-inside8.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="inside">
 
-                <img src="/images/equipments/truck-img20.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/inside/truck-inside8.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
-              <a href="/images/equipments/truck-img21.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="inside">
+              <a href="/images/equipments/inside/truck-inside9.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="inside">
 
-                <img src="/images/equipments/truck-img21.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/inside/truck-inside9.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
-              <a href="/images/equipments/truck-img22.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="inside">
+              <a href="/images/equipments/inside/truck-inside10.jpg"
+                class="lightbox group block overflow-hidden rounded-lg" data-gallery="inside">
 
-                <img src="/images/equipments/truck-img22.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
-              </a>
-
-              <a href="/images/equipments/truck-img23.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="inside">
-
-                <img src="/images/equipments/truck-img23.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
-              </a>
-
-              <a href="/images/equipments/truck-img24.jpg" class="lightbox group block overflow-hidden rounded-lg"
-                data-gallery="inside">
-
-                <img src="/images/equipments/truck-img24.jpg" alt="CIA Transport tractor"
-                  class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="/images/equipments/inside/truck-inside10.jpg" alt="CIA Transport tractor"
+                  class="parallax-element w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105">
               </a>
 
             </div>
@@ -535,7 +553,7 @@
     <!-- Equipment -->
 
     <!-- Testimonials -->
-    <section class="bg-primary text-white py-[4rem] lg:py-[6rem]">
+    <section class="bg-primary text-white py-[4rem] lg:py-[6rem] relative">
 
       <div class="mx-auto max-w-[100rem] px-8">
 
@@ -557,11 +575,10 @@
               <div
                 class="max-w-3xl mx-auto text-center bg-white/5 border border-white/10 rounded-lg px-8 py-10 lg:px-12 lg:py-12">
 
-                <span class="block heading-font text-5xl lg:text-6xl leading-none text-secondary mb-6">
-                  &ldquo;
-                </span>
+                <i
+                  class="bg-[url(/images/icons/quote.svg)] inline-block bg-[size:100%] bg-no-repeat w-[2.2rem] h-[2.2rem] mb-6"></i>
 
-                <blockquote class="text-xl lg:text-2xl leading-8 lg:leading-9 text-white">
+                <blockquote class="leading-8 lg:leading-9 text-white">
                   CIA Transport treats their drivers right. The equipment is
                   well-kept, the miles are consistent, and dispatch is always
                   easy to work with.
@@ -588,11 +605,10 @@
               <div
                 class="max-w-3xl mx-auto text-center bg-white/5 border border-white/10 rounded-lg px-8 py-10 lg:px-12 lg:py-12">
 
-                <span class="block heading-font text-5xl lg:text-6xl leading-none text-secondary mb-6">
-                  &ldquo;
-                </span>
+                <i
+                  class="bg-[url(/images/icons/quote.svg)] inline-block bg-[size:100%] bg-no-repeat w-[2.2rem] h-[2.2rem] mb-6"></i>
 
-                <blockquote class="text-xl lg:text-2xl leading-8 lg:leading-9 text-white">
+                <blockquote class="leading-8 lg:leading-9 text-white">
                   I've been driving for years, and finding a company that values experienced drivers makes a big
                   difference. CIA Transport delivers on that.
                 </blockquote>
@@ -618,11 +634,10 @@
               <div
                 class="max-w-3xl mx-auto text-center bg-white/5 border border-white/10 rounded-lg px-8 py-10 lg:px-12 lg:py-12">
 
-                <span class="block heading-font text-5xl lg:text-6xl leading-none text-secondary mb-6">
-                  &ldquo;
-                </span>
+                <i
+                  class="bg-[url(/images/icons/quote.svg)] inline-block bg-[size:100%] bg-no-repeat w-[2.2rem] h-[2.2rem] mb-6"></i>
 
-                <blockquote class="text-xl lg:text-2xl leading-8 lg:leading-9 text-white">
+                <blockquote class="leading-8 lg:leading-9 text-white">
                   Good equipment, steady work, and direct communication. You know what to expect when you're on the road
                   with CIA Transport.
                 </blockquote>
@@ -648,11 +663,10 @@
               <div
                 class="max-w-3xl mx-auto text-center bg-white/5 border border-white/10 rounded-lg px-8 py-10 lg:px-12 lg:py-12">
 
-                <span class="block heading-font text-5xl lg:text-6xl leading-none text-secondary mb-6">
-                  &ldquo;
-                </span>
+                <i
+                  class="bg-[url(/images/icons/quote.svg)] inline-block bg-[size:100%] bg-no-repeat w-[2.2rem] h-[2.2rem] mb-6"></i>
 
-                <blockquote class="text-xl lg:text-2xl leading-8 lg:leading-9 text-white">
+                <blockquote class="leading-8 lg:leading-9 text-white">
                   The biggest thing for me is having a company that respects my experience and keeps me moving. That's
                   what I've found here.
                 </blockquote>
@@ -678,11 +692,10 @@
               <div
                 class="max-w-3xl mx-auto text-center bg-white/5 border border-white/10 rounded-lg px-8 py-10 lg:px-12 lg:py-12">
 
-                <span class="block heading-font text-5xl lg:text-6xl leading-none text-secondary mb-6">
-                  &ldquo;
-                </span>
+                <i
+                  class="bg-[url(/images/icons/quote.svg)] inline-block bg-[size:100%] bg-no-repeat w-[2.2rem] h-[2.2rem] mb-6"></i>
 
-                <blockquote class="text-xl lg:text-2xl leading-8 lg:leading-9 text-white">
+                <blockquote class="leading-8 lg:leading-9 text-white">
                   I appreciate the straightforward communication and the quality of the equipment. It makes the job a
                   lot easier.
                 </blockquote>
@@ -703,11 +716,10 @@
 
           </div>
 
-
-          <!-- Pagination -->
-          <div class="swiper-pagination !static mt-10"></div>
-
         </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination mb-5"></div>
 
       </div>
 
@@ -715,57 +727,117 @@
     <!-- Testimonials -->
 
     <!-- Apply -->
-    <section id="apply" class="py-[4rem] lg:py-[6rem]" style="display:none">
+    <section id="apply" class="bg-gray-50 py-[4rem] lg:py-[6rem]">
+      <div class="mx-auto max-w-[100rem] px-8">
 
-      <div class="mx-auto max-w-[100rem] px-8 text-center">
+        <!-- Heading -->
+        <div class="text-center max-w-[55rem] mx-auto">
+          <h2 class="text-4xl lg:text-5xl font-bold text-primary uppercase mb-3">
+            Ready to drive with us?
+          </h2>
 
-        <h2 class="text-4xl lg:text-6xl parallax-element uppercase">Ready to drive with us?</h2>
-        <span class="block h-1 w-14 bg-secondary mb-8 md:mb-[3rem]"></span>
-        <p>Two ways to start. Send your info and we'll call you — or answer a few questions and find out right now if
-          you qualify.</p>
+          <span class="block h-1 w-14 bg-secondary mb-8 md:mb-[3rem] mx-auto"></span>
 
-      </div>
-
-      <div class="md:grid items-center grid-cols-12 gap-8">
-
-
-        <!-- Left Side -->
-        <div class="p-8 lg:p-[5rem] lg:pl-[8rem] col-span-6">
-          <div class="max-w-[32rem]">
-            <h2 class="text-4xl lg:text-6xl parallax-element uppercase">Ready to drive with us?</h2>
-            <p>Two ways to start. Send your info and we'll call you — or answer a few questions and find out right now
-              if you qualify.</p>
-            <div class="flex items-center gap-8 justify-between text-center pt-7 text-primary">
-              <div>
-                <strong class="block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow">40</strong>
-                <span>Trucks</span>
-              </div>
-              <div>
-                <strong class="block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow">48</strong>
-                <span>States</span>
-              </div>
-              <div>
-                <strong
-                  class="block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow">53'</strong>
-                <span>Trailers</span>
-              </div>
-            </div>
-          </div>
+          <p>
+            Two ways to start. Send your info and we'll call you — or answer a few
+            questions and find out right now if you qualify.
+          </p>
         </div>
-        <!-- Left Side -->
 
-        <!-- Right Side -->
-        <div class="md:col-span-6 mt-8 md:mt-0"><img class="parallax-element" data-orientation="down"
-            src="/images/who-we-are.png" alt="Who We Are"></div>
-        <!-- Right Side -->
+
+        <!-- Options -->
+        <div class="mt-14 lg:mt-16 md:flex overflow-hidden">
+
+          <!-- Apply Now -->
+          <div
+            class="group relative bg-white border border-primary/10 flex min-h-[300px] items-center lg:w-[65%]">
+
+            <!-- Accent -->
+            <span class="absolute top-0 left-0 w-full h-1 bg-secondary"></span>
+
+            <img data-orientation="left" class="parallax-element hidden lg:block lg:w-[20rem] xl:w-[27rem] h-full object-cover object-right" src="/images/apply-now-img.jpg" alt="Apply Now Image">
+
+            <div class="p-8 md:p-10 lg:p-12">
+
+            <div>
+              <p class="text-secondary font-bold uppercase text-sm tracking-wider mb-3">
+                Apply Now
+              </p>
+
+              <h3 class="font-heading font-semibold text-3xl lg:text-4xl text-primary uppercase">
+                We'll contact you
+              </h3>
+
+              <p class="text-base mt-5 max-w-lg text-primary/70 leading-6">
+                Ready to get started? Send us your information and someone from
+                our team will get in touch with you.
+              </p>
+            </div>
+
+            <div class="mt-8">
+              <button type="button" data-modal-open="application-modal"
+                class="group/btn inline-flex items-center gap-4 bg-secondary px-7 py-4 rounded-sm font-bold uppercase text-primary text-base transition-all duration-300 hover:bg-primary hover:text-white">
+                Apply Now
+                <svg class="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" viewBox="0 0 20 20"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </button>
+            </div>
+            </div>
+
+          </div>
+
+
+          <!-- Get Prequalified -->
+          <div
+            class="group relative bg-primary text-white p-8 md:p-10 lg:p-12 flex flex-col justify-between min-h-[300px] lg:w-[35%]">
+
+            <!-- Accent -->
+            <span class="absolute top-0 left-0 w-full h-1 bg-secondary"></span>
+
+            <div>
+              <p class="text-secondary font-bold uppercase text-sm tracking-wider mb-3">
+                Get Prequalified
+              </p>
+
+              <h3 class="font-heading font-semibold text-3xl lg:text-4xl uppercase">
+                See if you qualify
+              </h3>
+
+              <p class="text-base mt-5 max-w-lg text-white/70 leading-6">
+                Eight quick questions. Takes under a minute. Find out if you
+                meet our basic requirements before applying.
+              </p>
+            </div>
+
+            <div class="mt-8">
+              <button type="button" data-modal-open="prequalification-modal"
+                class="group/btn inline-flex items-center gap-4 bg-secondary px-7 py-4 rounded-sm font-bold uppercase text-primary text-base transition-all duration-300 hover:bg-white">
+
+                Get Prequalified
+
+                <svg class="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" viewBox="0 0 20 20"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </button>
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
-
     </section>
     <!-- Apply -->
 
     <!-- Contact -->
-    <section id="contact" class="py-[4rem] lg:py-[6rem] bg-light">
+    <section id="contact" class="bg-gray-200 py-[4rem] lg:py-[6rem]">
 
       <div class="mx-auto max-w-[100rem] px-8">
 
@@ -819,9 +891,9 @@
 
 
           <!-- Right / Form -->
-          <div class="bg-white rounded p-7 lg:p-10">
+          <div class="bg-light shadow-lg rounded p-7 lg:p-10">
 
-            <h3 class="heading-font text-2xl lg:text-3xl uppercase mb-8">
+            <h3 class="font-bold text-primary text-2xl lg:text-3xl uppercase mb-8">
               Request a quote
             </h3>
 
@@ -832,7 +904,7 @@
                 <!-- Name -->
                 <div>
                   <label for="name" class="block heading-font text-sm font-semibold uppercase tracking-wide mb-2">
-                    Name
+                    Name <sup class="text-red-700 font-bold text-base top-0 ml-2">*</sup>
                   </label>
 
                   <input type="text" id="name" name="name" placeholder="Your name"
@@ -844,7 +916,7 @@
                 <!-- Company -->
                 <div>
                   <label for="company" class="block heading-font text-sm font-semibold uppercase tracking-wide mb-2">
-                    Company
+                    Company <sup class="text-red-700 font-bold text-base top-0 ml-2">*</sup>
                   </label>
 
                   <input type="text" id="company" name="company" placeholder="Company name"
@@ -855,7 +927,7 @@
                 <!-- Email -->
                 <div>
                   <label for="email" class="block heading-font text-sm font-semibold uppercase tracking-wide mb-2">
-                    Email
+                    Email <sup class="text-red-700 font-bold text-base top-0 ml-2">*</sup>
                   </label>
 
                   <input type="email" id="email" name="email" placeholder="you@company.com"
@@ -879,7 +951,7 @@
                 <div class="md:col-span-2">
 
                   <label for="shipping" class="block heading-font text-sm font-semibold uppercase tracking-wide mb-2">
-                    What are you shipping?
+                    What are you shipping? <sup class="text-red-700 font-bold text-base top-0 ml-2">*</sup>
                   </label>
 
                   <textarea id="shipping" name="shipping" rows="4"
@@ -899,11 +971,11 @@
                   class="group inline-flex items-center gap-4 bg-secondary px-8 py-4 rounded font-bold uppercase text-primary transition-all duration-300 hover:bg-primary hover:text-white text-base">
                   Send inquiry
 
-                  <svg class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24"
+                  <!-- <svg class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24"
                     fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
+                      stroke-linejoin="round">
+                  </svg> -->
 
                 </button>
 
@@ -965,8 +1037,8 @@
           </div>
 
           <p class="mt-3 text-base leading-6">
-            Mon–Fri: 7:00am–6:00pm<br>
-            Sat: 8:00am–12:00pm
+            Mon-Fri: 7:00am-6:00pm<br>
+            Sat: 8:00am-12:00pm
           </p>
 
         </div>
@@ -1092,6 +1164,637 @@
 
   </footer>
   <!-- Footer -->
+
+  <!-- Application Modal -->
+  <div id="application-modal" class="fixed inset-0 z-[50] hidden items-center justify-center p-4 sm:p-6"
+    aria-hidden="true">
+
+    <!-- Overlay -->
+    <div class="modal-overlay absolute inset-0 bg-primary/80 backdrop-blur-sm" data-modal-close>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal-content relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-white shadow-2xl">
+
+      <!-- Top Accent -->
+      <span class="absolute top-0 left-0 w-full h-1 bg-secondary"></span>
+
+
+      <!-- Close -->
+      <button type="button" data-modal-close aria-label="Close application form"
+        class="absolute top-5 right-5 w-10 h-10 flex items-center justify-center text-primary/60 hover:text-primary transition-colors">
+
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+
+      </button>
+
+
+      <div class="p-7 sm:p-9 lg:p-10">
+
+        <p class="text-secondary font-bold uppercase text-sm tracking-wider mb-2">
+          Apply Now
+        </p>
+
+        <h2 class="font-heading font-semibold text-3xl lg:text-4xl text-primary uppercase">
+          We'll contact you
+        </h2>
+
+        <p class="text-base text-primary/70 mt-4 leading-6">
+          Ready to get started? Send us your information and someone from our
+          team will get in touch with you.
+        </p>
+
+
+        <!-- Application Form -->
+        <form id="driver-application-form" class="mt-8">
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-6">
+
+            <!-- Name -->
+            <div>
+              <label for="apply-name" class="block text-xs font-semibold text-primary uppercase tracking-wide mb-2">
+                Name
+              </label>
+
+              <input type="text" id="apply-name" name="name" placeholder="Your name" required
+                class="w-full border-0 border-b border-primary/20 bg-transparent px-0 py-3 text-base text-primary placeholder:text-primary/40 focus:border-secondary focus:ring-0 outline-none transition-colors">
+            </div>
+
+
+            <!-- Phone -->
+            <div>
+              <label for="apply-phone" class="block text-xs font-semibold text-primary uppercase tracking-wide mb-2">
+                Phone
+              </label>
+
+              <input type="tel" id="apply-phone" name="phone" placeholder="Your phone number" required
+                class="w-full border-0 border-b border-primary/20 bg-transparent px-0 py-3 text-base text-primary placeholder:text-primary/40 focus:border-secondary focus:ring-0 outline-none transition-colors">
+            </div>
+
+
+            <!-- Email -->
+            <div>
+              <label for="apply-email" class="block text-xs font-semibold text-primary uppercase tracking-wide mb-2">
+                Email
+              </label>
+
+              <input type="email" id="apply-email" name="email" placeholder="Your email" required
+                class="w-full border-0 border-b border-primary/20 bg-transparent px-0 py-3 text-base text-primary placeholder:text-primary/40 focus:border-secondary focus:ring-0 outline-none transition-colors">
+            </div>
+
+
+            <!-- Experience -->
+            <div>
+              <label for="apply-experience"
+                class="block text-xs font-semibold text-primary uppercase tracking-wide mb-2">
+                Years of Experience
+              </label>
+
+              <select id="apply-experience" name="experience" required
+                class="w-full border-0 border-b border-primary/20 bg-transparent px-0 py-3 text-base text-primary focus:border-secondary focus:ring-0 outline-none transition-colors">
+
+                <option value="">Select</option>
+                <option value="under-1">Under 1 year</option>
+                <option value="1-2">1–2 years</option>
+                <option value="2-5">2–5 years</option>
+                <option value="5+">5+ years</option>
+
+              </select>
+            </div>
+
+          </div>
+
+
+          <!-- Submit -->
+          <button type="submit"
+            class="group inline-flex items-center gap-4 mt-9 bg-secondary px-7 py-4 rounded-sm font-bold uppercase text-primary text-base transition-all duration-300 hover:bg-primary hover:text-white">
+
+            Send Application
+
+            <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 20 20"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+          </button>
+
+        </form>
+
+
+        <!-- Thank You -->
+        <div id="application-thank-you" class="hidden mt-7 p-5 bg-gray-50 border-l-4 border-secondary">
+
+          <p class="font-semibold text-primary">
+            Got it.
+          </p>
+
+          <p class="text-base text-primary/70 mt-2 leading-6">
+            Someone from our team will call you within
+            <span data-response-time>one business day</span>.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- Application Modal -->
+
+  <!-- Prequalification Modal -->
+  <div id="prequalification-modal" class="fixed inset-0 z-[50] hidden items-center justify-center p-4 sm:p-6"
+    aria-hidden="true">
+
+    <!-- Overlay -->
+    <div class="modal-overlay absolute inset-0 bg-primary/80 backdrop-blur-sm" data-modal-close>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal-content relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-primary text-white shadow-2xl">
+
+      <!-- Top Accent -->
+      <span class="absolute top-0 left-0 w-full h-1 bg-secondary"></span>
+
+
+      <!-- Close -->
+      <button type="button" data-modal-close aria-label="Close prequalification form"
+        class="absolute top-5 right-5 w-10 h-10 flex items-center justify-center text-white/60 hover:text-white transition-colors">
+
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+
+      </button>
+
+
+      <div class="p-7 sm:p-9 lg:p-10">
+
+        <!-- Header -->
+        <div id="prequal-header">
+
+          <p class="text-secondary font-bold uppercase text-sm tracking-wider mb-2">
+            Get Prequalified
+          </p>
+
+          <h2 class="font-heading font-semibold text-3xl lg:text-4xl uppercase">
+            See if you qualify
+          </h2>
+
+          <p class="text-base text-white/70 mt-4">
+            Eight quick questions. Takes under a minute.
+          </p>
+
+        </div>
+
+        <!-- Prequalification Form -->
+        <form id="prequalification-form" class="mt-8">
+
+
+          <!-- Question 1 -->
+          <div class="prequal-question" data-question="1">
+
+            <p class="text-xs text-secondary font-bold uppercase tracking-wider mb-3">
+              Question 1 of 8
+            </p>
+
+            <h3 class="text-xl font-semibold">
+              Do you hold a valid Class A CDL?
+            </h3>
+
+            <div class="mt-6 space-y-4">
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q1" value="yes" required class="w-4 h-4 accent-secondary">
+                <span>Yes</span>
+              </label>
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q1" value="no" class="w-4 h-4 accent-secondary">
+                <span>No</span>
+              </label>
+
+            </div>
+          </div>
+
+
+          <!-- Question 2 -->
+          <div class="prequal-question hidden" data-question="2">
+
+            <p class="text-xs text-secondary font-bold uppercase tracking-wider mb-3">
+              Question 2 of 8
+            </p>
+
+            <h3 class="text-xl font-semibold">
+              How much verifiable Class A tractor-trailer experience do you have?
+            </h3>
+
+            <div class="mt-6 space-y-4">
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q2" value="under-1" required class="w-4 h-4 accent-secondary">
+                <span>Under 1 year</span>
+              </label>
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q2" value="1-2" class="w-4 h-4 accent-secondary">
+                <span>1–2 years</span>
+              </label>
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q2" value="2+" class="w-4 h-4 accent-secondary">
+                <span>2+ years</span>
+              </label>
+
+            </div>
+          </div>
+
+
+          <!-- Question 3 -->
+          <div class="prequal-question hidden" data-question="3">
+
+            <p class="text-xs text-secondary font-bold uppercase tracking-wider mb-3">
+              Question 3 of 8
+            </p>
+
+            <h3 class="text-xl font-semibold">
+              Any flatbed experience (tarping, chains, straps)?
+            </h3>
+
+            <div class="mt-6 space-y-4">
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q3" value="none" required class="w-4 h-4 accent-secondary">
+                <span>None</span>
+              </label>
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q3" value="under-6" class="w-4 h-4 accent-secondary">
+                <span>Under 6 months</span>
+              </label>
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q3" value="6+" class="w-4 h-4 accent-secondary">
+                <span>6+ months</span>
+              </label>
+
+            </div>
+          </div>
+
+
+          <!-- Question 4 -->
+          <div class="prequal-question hidden" data-question="4">
+
+            <p class="text-xs text-secondary font-bold uppercase tracking-wider mb-3">
+              Question 4 of 8
+            </p>
+
+            <h3 class="text-xl font-semibold">
+              Are you 23 or older?
+            </h3>
+
+            <div class="mt-6 space-y-4">
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q4" value="yes" required class="w-4 h-4 accent-secondary">
+                <span>Yes</span>
+              </label>
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q4" value="no" class="w-4 h-4 accent-secondary">
+                <span>No</span>
+              </label>
+
+            </div>
+          </div>
+
+
+          <!-- Question 5 -->
+          <div class="prequal-question hidden" data-question="5">
+
+            <p class="text-xs text-secondary font-bold uppercase tracking-wider mb-3">
+              Question 5 of 8
+            </p>
+
+            <h3 class="text-xl font-semibold">
+              Moving violations in the last 3 years?
+            </h3>
+
+            <div class="mt-6 space-y-4">
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q5" value="0" required class="w-4 h-4 accent-secondary">
+                <span>0</span>
+              </label>
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q5" value="1-2" class="w-4 h-4 accent-secondary">
+                <span>1–2</span>
+              </label>
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q5" value="3+" class="w-4 h-4 accent-secondary">
+                <span>3+</span>
+              </label>
+
+            </div>
+          </div>
+
+
+          <!-- Question 6 -->
+          <div class="prequal-question hidden" data-question="6">
+
+            <p class="text-xs text-secondary font-bold uppercase tracking-wider mb-3">
+              Question 6 of 8
+            </p>
+
+            <h3 class="text-xl font-semibold">
+              Any DOT-recordable or preventable accidents in the last 3 years?
+            </h3>
+
+            <div class="mt-6 space-y-4">
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q6" value="0" required class="w-4 h-4 accent-secondary">
+                <span>0</span>
+              </label>
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q6" value="1" class="w-4 h-4 accent-secondary">
+                <span>1</span>
+              </label>
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q6" value="2+" class="w-4 h-4 accent-secondary">
+                <span>2+</span>
+              </label>
+
+            </div>
+          </div>
+
+
+          <!-- Question 7 -->
+          <div class="prequal-question hidden" data-question="7">
+
+            <p class="text-xs text-secondary font-bold uppercase tracking-wider mb-3">
+              Question 7 of 8
+            </p>
+
+            <h3 class="text-xl font-semibold">
+              Any DUI/DWI, reckless driving, or license suspension in the last 5 years?
+            </h3>
+
+            <div class="mt-6 space-y-4">
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q7" value="yes" required class="w-4 h-4 accent-secondary">
+                <span>Yes</span>
+              </label>
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q7" value="no" class="w-4 h-4 accent-secondary">
+                <span>No</span>
+              </label>
+
+            </div>
+          </div>
+
+
+          <!-- Question 8 -->
+          <div class="prequal-question hidden" data-question="8">
+
+            <p class="text-xs text-secondary font-bold uppercase tracking-wider mb-3">
+              Question 8 of 8
+            </p>
+
+            <h3 class="text-xl font-semibold leading-7">
+              Are you currently in the FMCSA Clearinghouse in
+              "prohibited" status or in an unfinished SAP return-to-duty program?
+            </h3>
+
+            <div class="mt-6 space-y-4">
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q8" value="yes" required class="w-4 h-4 accent-secondary">
+                <span>Yes</span>
+              </label>
+
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="q8" value="no" class="w-4 h-4 accent-secondary">
+                <span>No</span>
+              </label>
+
+            </div>
+          </div>
+
+
+          <!-- Navigation -->
+          <div id="prequal-navigation" class="mt-8 pt-6 border-t border-white/10 flex items-center justify-between">
+
+            <button type="button" id="prequal-prev"
+              class="hidden text-sm font-semibold uppercase text-white/60 hover:text-white transition-colors">
+              ← Back
+            </button>
+
+            <span id="prequal-counter" class="text-xs text-white/40 uppercase tracking-wide">
+              1 / 8
+            </span>
+
+            <button type="button" id="prequal-next"
+              class="group inline-flex items-center gap-3 bg-secondary px-6 py-3 rounded-sm font-bold uppercase text-primary text-base transition-all duration-300 hover:bg-white">
+
+              Next
+
+              <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 20 20"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+            </button>
+
+          </div>
+
+
+          <!-- Result -->
+          <div
+  id="prequal-result"
+  class="hidden mt-8 p-6 md:p-7 border-2 border-secondary bg-secondary/10">
+
+  <div id="prequal-pass" class="hidden">
+
+    <div class="flex items-start gap-4">
+
+      <div class="shrink-0 w-10 h-10 rounded-full bg-secondary text-primary flex items-center justify-center">
+        <svg
+          class="w-5 h-5"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M5 12.5L9.5 17L19 7"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </div>
+
+      <div>
+        <p class="text-secondary font-bold uppercase tracking-wide text-sm">
+          You're prequalified
+        </p>
+
+        <p class="text-xl font-semibold mt-2 text-white">
+          Great news — you meet our basic requirements.
+        </p>
+
+        <p class="text-base text-white/70 mt-3">
+          Expect a call within
+          <span data-response-time>one business day</span>.
+        </p>
+
+        <p class="text-base text-white/70 mt-2">
+          Want to move faster? Call us at
+          <a
+            data-recruiting-phone
+            href="tel:2174928070"
+            class="text-secondary font-semibold hover:underline">
+            217-492-8070
+          </a>.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div id="prequal-fail" class="hidden">
+
+    <div class="flex items-start gap-4">
+
+      <div class="shrink-0 w-10 h-10 rounded-full bg-white/10 text-white flex items-center justify-center">
+        <svg
+          class="w-5 h-5"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7 7L17 17M17 7L7 17"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <div>
+        <p class="text-secondary font-bold uppercase tracking-wide text-sm">
+          Not qualified at this time
+        </p>
+
+        <p class="text-xl font-semibold mt-2 text-white">
+          Based on your answers, we can't move forward right now.
+        </p>
+
+        <p class="text-base text-white/70 mt-3">
+          If your situation changes down the road, we'd be glad to hear
+          from you again.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+          <!-- Contact Details -->
+          <div id="prequal-contact" class="hidden mt-8">
+
+            <div>
+              <p class="text-xs text-secondary font-bold uppercase tracking-wider mb-3">
+                Almost done
+              </p>
+
+              <h3 class="text-2xl lg:text-3xl font-semibold">
+                Where should we reach you?
+              </h3>
+
+              <p class="text-base text-white/60 mt-3">
+                Enter your contact information so our recruiting team can follow up.
+              </p>
+            </div>
+
+
+            <div class="mt-7 space-y-6">
+
+              <!-- Name -->
+              <div>
+                <label for="prequal-name"
+                  class="block text-xs font-semibold uppercase tracking-wide text-white/70 mb-2">
+                  Name
+                </label>
+
+                <input type="text" id="prequal-name" name="prequal-name" placeholder="Your name" required
+                  class="w-full border-0 border-b border-white/20 bg-transparent px-0 py-3 text-base text-white placeholder:text-white/40 focus:border-secondary focus:ring-0 outline-none transition-colors">
+              </div>
+
+
+              <!-- Phone -->
+              <div>
+                <label for="prequal-phone"
+                  class="block text-xs font-semibold uppercase tracking-wide text-white/70 mb-2">
+                  Phone
+                </label>
+
+                <input type="tel" id="prequal-phone" name="prequal-phone" placeholder="Your phone number" required
+                  class="w-full border-0 border-b border-white/20 bg-transparent px-0 py-3 text-base text-white placeholder:text-white/40 focus:border-secondary focus:ring-0 outline-none transition-colors">
+              </div>
+
+
+              <!-- Email -->
+              <div>
+                <label for="prequal-email"
+                  class="block text-xs font-semibold uppercase tracking-wide text-white/70 mb-2">
+                  Email
+                </label>
+
+                <input type="email" id="prequal-email" name="prequal-email" placeholder="Your email" required
+                  class="w-full border-0 border-b border-white/20 bg-transparent px-0 py-3 text-base text-white placeholder:text-white/40 focus:border-secondary focus:ring-0 outline-none transition-colors">
+              </div>
+
+            </div>
+
+
+            <!-- Submit -->
+            <button type="submit" id="prequal-submit"
+              class="group mt-8 inline-flex items-center gap-4 bg-secondary px-7 py-4 rounded-sm font-bold uppercase text-primary text-base transition-all duration-300 hover:bg-white">
+
+              Submit
+
+              <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 20 20"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+            </button>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- Prequalification Modal -->
 
 
   <!-- Scripts -->

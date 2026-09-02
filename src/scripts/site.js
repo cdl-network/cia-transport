@@ -6,7 +6,9 @@ import { tabs } from "./modules/tabs";
 import { parallax } from "./modules/parallax";
 import { scrollToSection } from "./modules/scroll-to-section";
 import { glightbox } from "./modules/glightbox";
-
+import { initModals } from "./modules/modals";
+import { initPrequalification } from "./modules/prequalification";
+import { counter } from "./modules/counter";
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -17,5 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
    parallax();
    scrollToSection();
    glightbox();
+   initModals();
+   initPrequalification();
+   counter();
 
   });
