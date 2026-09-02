@@ -50,28 +50,8 @@
 
 
 /* ==========================================================================
-	Buttons
-========================================================================== */
-
-.btn {
-  background-color: #712E2C;
-  color: #FFF7ED;
-}
-
-.btn:hover,
-.btn.active {
-  background-color: var(--primary);
-  color: #fff;
-}
-
-
-/* ==========================================================================
 	Tabs
 ========================================================================== */
-
-.nav-tab {
-  position: relative;
-}
 
 .nav-tab::after {
   content: '';
@@ -83,6 +63,10 @@
   background: var(--secondary);
   transform: scaleX(0);
   transition: transform 0.3s ease;
+}
+
+.nav-tab.is-active {
+  color: var(--secondary);
 }
 
 .nav-tab.is-active::after {
@@ -174,6 +158,10 @@
 
 .text-secondary {
   color: var(--secondary);
+}
+
+.border-secondary {
+  border-color: var(--secondary);
 }
 
 .bg-tertiary {

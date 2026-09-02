@@ -39,7 +39,7 @@
 
   <!-- Header -->
   <header class="site-header fixed w-full left-0 top-0 py-4 z-[5] font-medium">
-    <div class="mx-auto max-w-[100rem] px-8 flex justify-between items-center gap-8">
+    <div class="mx-auto max-w-[100rem] px-8 flex items-center xl:items-start justify-between gap-8">
 
       <!-- Logo -->
       <a href="/" class="inline-block text-4xl font-bold leading-none"><img class="logo transition-all duration-500"
@@ -47,16 +47,25 @@
       <!-- Logo -->
 
       <!-- Navigation -->
-      <div class="main-navigation">
+      <div class="main-navigation xl:mt-8">
 
         <nav class="max-h-[65vh] main-menu">
           <i
             class="bg-[url(/images/icons/close.svg)] inline-block bg-[size:100%] bg-no-repeat w-[2rem] h-[2.4rem] absolute top-[2rem] right-[2rem] transition-all duration-[400ms] xl:hidden"></i>
-          <ul class="list-none flex flex-col xl:flex-row justify-end gap-12 px-8 m-0 text-center xl:text-left z-[1]">
+          <ul
+            class="list-none flex flex-col items-center xl:flex-row justify-end gap-12 px-8 m-0 text-center xl:text-left z-[1]">
             <li><a href="#about" class="text-light px-4 py-2 rounded">About</a></li>
             <li><a href="#equipment" class="text-light px-4 py-2 rounded">Equipment</a></li>
             <li><a href="#contact" class="text-light px-4 py-2 rounded">Contact</a></li>
-            <li><a href="#apply" class="bg-secondary text-primary px-4 py-2 rounded">Apply Now</a></li>
+            <li><a href="#apply"
+                class="group inline-flex items-center gap-x-2 bg-secondary px-4 py-2 rounded font-bold uppercase text-primary transition-all duration-300 hover:bg-primary hover:text-white text-base">Apply
+                Now
+                <svg class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+              </a></li>
           </ul>
         </nav>
 
@@ -77,7 +86,7 @@
 
     <!-- Hero Banner -->
     <section
-      class="hero-banner bg-primary min-h-[40rem] md:min-h-screen flex flex-col justify-center text-white relative overflow-hidden">
+      class="hero-banner bg-primary min-h-[40rem] md:min-h-screen flex flex-col justify-center text-white relative overflow-hidden pt-[7rem]">
       <div class="absolute left-0 top-0 w-full h-full z-[2] bg-tertiary opacity-[0.6]"></div>
 
       <!-- Hero Banner Image -->
@@ -92,13 +101,13 @@
         <p class="my-[3.5rem] max-w-[40rem] mx-auto text-2xl text-shadow">CIA Transport is a flatbed carrier out of the
           Joliet, IL
           area. Experienced drivers, well-kept equipment, and pay that matches what you know.</p>
-        <div class="flex items-center justify-center gap-5">
-          <a href="#"
-            class="bg-light text-primary font-bold inline-block p-3 md:px-6 md:pxy-4 rounded-lg transition-all duration-500">
+        <div class="flex items-center justify-center gap-5 tracking-wide heading-font font-bold text-base">
+          <a href="#apply"
+            class="border-[3px] border-white bg-white text-primary inline-block p-3 md:px-6 md:py-4 rounded uppercase transition-all duration-500">
             Apply Now
           </a>
-          <a href="#"
-            class="bg-light text-primary font-bold inline-block p-3 md:px-6 md:pxy-4 rounded-lg transition-all duration-500">
+          <a href="#apply"
+            class="border-[3px] border-white text-white hover:bg-white hover:text-zinc-900 inline-block p-3 md:px-6 md:py-4 rounded uppercase transition-all duration-500">
             Get Prequalified
           </a>
         </div>
@@ -116,8 +125,9 @@
         <!-- Left Side -->
         <div class="p-8 lg:p-[5rem] lg:pl-[8rem] col-span-6">
           <div class="max-w-[32rem]">
-            <h2 class="text-4xl lg:text-6xl parallax-element uppercase">Who We Are</h2>
-            <h3 class="text-2xl text-secondary mb-7 pb-8 text-shadow">Built around experienced drivers.</h3>
+            <h2 class="text-4xl lg:text-6xl parallax-element text-primary font-bold uppercase">Who We Are</h2>
+            <h3 class="text-xl mb-6">Built around experienced drivers.</h3>
+            <span class="block h-1 w-14 bg-secondary mb-8 md:mb-[3rem]"></span>
             <p>CIA Transport is a flatbed specialized trucking company based in Joliet, IL area, running ~40 trucks all
               48 states, moving construction equipment and other specialized freight that require driver attention to
               details. We built this company on experienced drivers, and we pay like it.</p>
@@ -160,144 +170,137 @@
       <!-- Hero Banner Image -->
 
       <div class="mx-auto max-w-[100rem] px-8 relative z-[2]">
-        <h2 class="text-4xl lg:text-6xl parallax-element uppercase text-center">What We Offer</h2>
+        <h2 class="text-4xl lg:text-6xl parallax-element uppercase font-bold text-light text-center mb-6">What We Offer
+        </h2>
+        <span class="block h-1 w-14 bg-secondary mb-8 md:mb-[3rem] mx-auto"></span>
 
         <!-- Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 mt-10 text-[1.1rem]">
 
           <!-- Col -->
-          <section class="group relative overflow-hidden bg-light text-primary rounded-xl px-7 pt-7 lg:px-8 lg:pt-8 min-h-[16rem]
-           flex flex-col justify-between
-           border border-primary/5
-           transition-all duration-500 ease-out
-           hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10" data-orientation="down">
-
-            <!-- Hover accent -->
-            <span class="absolute top-0 left-0 w-full h-1 bg-secondary
-             origin-left scale-x-0 group-hover:scale-x-100
-             transition-transform duration-500">
-            </span>
+          <section class="group relative overflow-hidden bg-light text-primary rounded px-7 pt-7 pb-6 lg:px-8 lg:pt-8
+                   min-h-[16rem] flex flex-col justify-between
+                   border-b-[0.5rem] border-secondary
+                   shadow-sm
+                   transition-all duration-500 ease-out
+                   hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10" data-orientation="down">
 
             <div>
+              <!-- Icon -->
+              <span class="flex items-center justify-center w-16 h-16 rounded-full
+                       bg-primary text-secondary
+                       transition-all duration-300
+                       group-hover:bg-secondary group-hover:text-primary
+                       group-hover:scale-110">
+                <i class="bg-[url(/images/icons/sack-dollar.svg)] inline-block
+                         bg-[size:100%] bg-center bg-no-repeat
+                         w-8 h-8"></i>
+              </span>
 
-              <i
-                class="bg-[url(/images/icons/sack-dollar.svg)] inline-block bg-[size:100%] bg-no-repeat w-[2.5rem] h-[2.5rem] transition-all duration-300 group-hover:bg-secondary group-hover:scale-110"></i>
-
-              <h3 class="font-heading font-semibold text-3xl mt-3">
+              <h3 class="heading-font font-bold text-xl lg:text-2xl my-4">
                 Experience Pays
               </h3>
 
-              <p class="mt-4 leading-6 text-primary/75">
+              <p class="leading-6">
                 Pay that scales with your experience — 80 CPM plus tarp and
                 extra stop pay, or 30% of the gross revenue.
               </p>
             </div>
-
-            <div class="mt-6 h-px w-0 bg-secondary
-             group-hover:w-full transition-all duration-500">
-            </div>
           </section>
           <!-- Col -->
 
           <!-- Col -->
-          <section class="group relative overflow-hidden bg-light text-primary rounded-xl px-7 pt-7 lg:px-8 lg:pt-8 min-h-[16rem]
-           flex flex-col justify-between
-           border border-primary/5
-           transition-all duration-500 ease-out
-           hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10" data-orientation="down">
-
-            <!-- Hover accent -->
-            <span class="absolute top-0 left-0 w-full h-1 bg-secondary
-             origin-left scale-x-0 group-hover:scale-x-100
-             transition-transform duration-500">
-            </span>
+          <section class="group relative overflow-hidden bg-light text-primary rounded px-7 pt-7 pb-6 lg:px-8 lg:pt-8
+                   min-h-[16rem] flex flex-col justify-between
+                   border-b-[0.5rem] border-secondary
+                   shadow-sm
+                   transition-all duration-500 ease-out
+                   hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10" data-orientation="down">
 
             <div>
+              <!-- Icon -->
+              <span class="flex items-center justify-center w-16 h-16 rounded-full
+                       bg-primary text-secondary
+                       transition-all duration-300
+                       group-hover:bg-secondary group-hover:text-primary
+                       group-hover:scale-110">
+                <i class="bg-[url(/images/icons/road.svg)] inline-block
+                         bg-[size:100%] bg-center bg-no-repeat
+                         w-8 h-8"></i>
+              </span>
 
-              <i
-                class="bg-[url(/images/icons/road.svg)] inline-block bg-[size:100%] bg-no-repeat w-[2.5rem] h-[2.5rem] transition-all duration-300 group-hover:bg-secondary group-hover:scale-110"></i>
-
-              <h3 class="font-heading font-semibold text-3xl mt-3">
+              <h3 class="heading-font font-bold text-xl lg:text-2xl my-4">
                 Consistent Miles
               </h3>
 
-              <p class="mt-4 leading-6 text-primary/75">
+              <p class="leading-6">
                 Steady freight and consistent miles across all 48 states.
               </p>
             </div>
-
-            <div class="mt-6 h-px w-0 bg-secondary
-             group-hover:w-full transition-all duration-500">
-            </div>
           </section>
           <!-- Col -->
 
           <!-- Col -->
-          <section class="group relative overflow-hidden bg-light text-primary rounded-xl px-7 pt-7 lg:px-8 lg:pt-8 min-h-[16rem]
-           flex flex-col justify-between
-           border border-primary/5
-           transition-all duration-500 ease-out
-           hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10" data-orientation="down">
-
-            <!-- Hover accent -->
-            <span class="absolute top-0 left-0 w-full h-1 bg-secondary
-             origin-left scale-x-0 group-hover:scale-x-100
-             transition-transform duration-500">
-            </span>
+          <section class="group relative overflow-hidden bg-light text-primary rounded px-7 pt-7 pb-6 lg:px-8 lg:pt-8
+                   min-h-[16rem] flex flex-col justify-between
+                   border-b-[0.5rem] border-secondary
+                   shadow-sm
+                   transition-all duration-500 ease-out
+                   hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10" data-orientation="down">
 
             <div>
+              <!-- Icon -->
+              <span class="flex items-center justify-center w-16 h-16 rounded-full
+                       bg-primary text-secondary
+                       transition-all duration-300
+                       group-hover:bg-secondary group-hover:text-primary
+                       group-hover:scale-110">
+                <i class="bg-[url(/images/icons/trailer.svg)] inline-block
+                         bg-[size:100%] bg-center bg-no-repeat
+                         w-8 h-8"></i>
+              </span>
 
-              <i
-                class="bg-[url(/images/icons/trailer.svg)] inline-block bg-[size:100%] bg-no-repeat w-[2.7rem] h-[2.5rem] transition-all duration-300 group-hover:bg-secondary group-hover:scale-110"></i>
-
-              <h3 class="font-heading font-semibold text-3xl mt-3">
+              <h3 class="heading-font font-bold text-xl lg:text-2xl my-4">
                 Well-kept Equipment
               </h3>
 
-              <p class="mt-4 leading-6 text-primary/75">
+              <p class="leading-6">
                 Reliable, well-maintained equipment built to keep you moving.
               </p>
             </div>
-
-            <div class="mt-6 h-px w-0 bg-secondary
-             group-hover:w-full transition-all duration-500">
-            </div>
           </section>
           <!-- Col -->
 
           <!-- Col -->
-          <section class="group relative overflow-hidden bg-light text-primary rounded-xl px-7 pt-7 lg:px-8 lg:pt-8 min-h-[16rem]
-           flex flex-col justify-between
-           border border-primary/5
-           transition-all duration-500 ease-out
-           hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10" data-orientation="down">
-
-            <!-- Hover accent -->
-            <span class="absolute top-0 left-0 w-full h-1 bg-secondary
-             origin-left scale-x-0 group-hover:scale-x-100
-             transition-transform duration-500">
-            </span>
+          <section class="group relative overflow-hidden bg-light text-primary rounded px-7 pt-7 pb-6 lg:px-8 lg:pt-8
+                   min-h-[16rem] flex flex-col justify-between
+                   border-b-[0.5rem] border-secondary
+                   shadow-sm
+                   transition-all duration-500 ease-out
+                   hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10" data-orientation="down">
 
             <div>
+              <!-- Icon -->
+              <span class="flex items-center justify-center w-16 h-16 rounded-full
+                       bg-primary text-secondary
+                       transition-all duration-300
+                       group-hover:bg-secondary group-hover:text-primary
+                       group-hover:scale-110">
+                <i class="bg-[url(/images/icons/user.svg)] inline-block
+                         bg-[size:100%] bg-center bg-no-repeat
+                         w-8 h-8"></i>
+              </span>
 
-              <i
-                class="bg-[url(/images/icons/user.svg)] inline-block bg-[size:100%] bg-no-repeat w-[2.2rem] h-[2.5rem] transition-all duration-300 group-hover:bg-secondary group-hover:scale-110"></i>
-
-              <h3 class="font-heading font-semibold text-3xl mt-3">
+              <h3 class="heading-font font-bold text-xl lg:text-2xl my-4">
                 Direct Dispatch
               </h3>
 
-              <p class="mt-4 leading-6 text-primary/75">
+              <p class="leading-6">
                 Work directly with dispatch for clear communication and dependable support.
               </p>
             </div>
-
-            <div class="mt-6 h-px w-0 bg-secondary
-             group-hover:w-full transition-all duration-500">
-            </div>
           </section>
           <!-- Col -->
-
 
         </div>
         <!-- Grid -->
@@ -310,21 +313,25 @@
     <section id="equipment" class="bg-light overflow-hidden py-[4rem] lg:py-[6rem] text-center">
       <div class="mx-auto max-w-[100rem] px-8">
 
-        <h2 class="text-4xl lg:text-6xl parallax-element uppercase mb-7">EQUIPMENT</h2>
+        <h2 class="text-4xl lg:text-6xl parallax-element uppercase text-primary font-bold mb-3">EQUIPMENT</h2>
         <p>Late-model tractors and 53' flatbed and step-deck trailers. Take a look inside and out.</p>
+
+        <span class="block h-1 w-14 bg-secondary mb-8 md:mb-[3rem] mx-auto"></span>
 
         <!-- Tabs -->
         <div class="mt-10">
 
-          <div class="flex gap-2 border-b border-primary/15">
+          <div class="flex gap-2 border-b border-primary/15 text-base">
 
-            <button type="button" class="nav-tab is-active px-6 py-3 font-semibold text-sm uppercase tracking-wide"
+            <button type="button"
+              class="nav-tab text-shadow relative is-active px-6 py-3 font-semibold uppercase tracking-wide"
               data-tab="outside">
               Outside
             </button>
 
             <button type="button"
-              class="nav-tab px-6 py-3 font-semibold text-sm uppercase tracking-wide text-primary/50" data-tab="inside">
+              class="nav-tab text-shadow relative px-6 py-3 font-semibold uppercase tracking-wide text-primary/50"
+              data-tab="inside">
               Inside
             </button>
 
@@ -334,7 +341,7 @@
           <!-- Outside -->
           <div id="outside" class="equipment-panel mt-8">
 
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
 
               <a href="/images/equipments/truck-img1.jpg" class="lightbox group block overflow-hidden rounded-lg"
                 data-gallery="outside">
@@ -430,7 +437,7 @@
           <!-- Inside -->
           <div id="inside" class="equipment-panel mt-8 hidden">
 
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
 
               <a href="/images/equipments/truck-img13.jpg" class="lightbox group block overflow-hidden rounded-lg"
                 data-gallery="inside">
@@ -532,9 +539,11 @@
 
       <div class="mx-auto max-w-[100rem] px-8">
 
-        <h2 class="font-heading text-4xl lg:text-6xl uppercase mb-12 text-center">
+        <h2 class="heading-font text-4xl lg:text-6xl uppercase mb-6 text-center">
           What Our Drivers Say
         </h2>
+
+        <span class="block h-1 w-14 bg-secondary mb-8 md:mb-[3rem] mx-auto"></span>
 
 
         <!-- Swiper -->
@@ -545,24 +554,25 @@
             <!-- Testimonial 1 -->
             <div class="swiper-slide">
 
-              <div class="max-w-3xl mx-auto text-center bg-white/5 border border-white/10 rounded-lg p-8">
+              <div
+                class="max-w-3xl mx-auto text-center bg-white/5 border border-white/10 rounded-lg px-8 py-10 lg:px-12 lg:py-12">
 
-                <span class="block font-heading text-6xl lg:text-7xl leading-none text-secondary mb-4">
+                <span class="block heading-font text-5xl lg:text-6xl leading-none text-secondary mb-6">
                   &ldquo;
                 </span>
 
-                <blockquote class="text-xl lg:text-2xl leading-8 lg:leading-9">
+                <blockquote class="text-xl lg:text-2xl leading-8 lg:leading-9 text-white">
                   CIA Transport treats their drivers right. The equipment is
                   well-kept, the miles are consistent, and dispatch is always
                   easy to work with.
                 </blockquote>
 
-                <div class="mt-7">
-                  <p class="font-heading font-semibold text-xl">
+                <div class="mt-8 pt-6 border-t border-white/10">
+                  <p class="heading-font font-semibold text-xl lg:text-2xl text-white mb-2">
                     Mike
                   </p>
 
-                  <p class="text-sm text-white/60 mt-1">
+                  <p class="text-base text-white/70">
                     8 years of experience
                   </p>
                 </div>
@@ -575,24 +585,24 @@
             <!-- Testimonial 2 -->
             <div class="swiper-slide">
 
-              <div class="max-w-3xl mx-auto text-center bg-white/5 border border-white/10 rounded-lg p-8">
+              <div
+                class="max-w-3xl mx-auto text-center bg-white/5 border border-white/10 rounded-lg px-8 py-10 lg:px-12 lg:py-12">
 
-                <span class="block font-heading text-6xl lg:text-7xl leading-none text-secondary mb-4">
+                <span class="block heading-font text-5xl lg:text-6xl leading-none text-secondary mb-6">
                   &ldquo;
                 </span>
 
-                <blockquote class="text-xl lg:text-2xl leading-8 lg:leading-9">
-                  I've been driving for years, and finding a company that
-                  values experienced drivers makes a big difference. CIA
-                  Transport delivers on that.
+                <blockquote class="text-xl lg:text-2xl leading-8 lg:leading-9 text-white">
+                  I've been driving for years, and finding a company that values experienced drivers makes a big
+                  difference. CIA Transport delivers on that.
                 </blockquote>
 
-                <div class="mt-7">
-                  <p class="font-heading font-semibold text-xl">
+                <div class="mt-8 pt-6 border-t border-white/10">
+                  <p class="heading-font font-semibold text-xl lg:text-2xl text-white mb-2">
                     James
                   </p>
 
-                  <p class="text-sm text-white/60 mt-1">
+                  <p class="text-base text-white/70">
                     12 years of experience
                   </p>
                 </div>
@@ -605,24 +615,24 @@
             <!-- Testimonial 3 -->
             <div class="swiper-slide">
 
-              <div class="max-w-3xl mx-auto text-center bg-white/5 border border-white/10 rounded-lg p-8">
+              <div
+                class="max-w-3xl mx-auto text-center bg-white/5 border border-white/10 rounded-lg px-8 py-10 lg:px-12 lg:py-12">
 
-                <span class="block font-heading text-6xl lg:text-7xl leading-none text-secondary mb-4">
+                <span class="block heading-font text-5xl lg:text-6xl leading-none text-secondary mb-6">
                   &ldquo;
                 </span>
 
-                <blockquote class="text-xl lg:text-2xl leading-8 lg:leading-9">
-                  Good equipment, steady work, and direct communication.
-                  You know what to expect when you're on the road with
-                  CIA Transport.
+                <blockquote class="text-xl lg:text-2xl leading-8 lg:leading-9 text-white">
+                  Good equipment, steady work, and direct communication. You know what to expect when you're on the road
+                  with CIA Transport.
                 </blockquote>
 
-                <div class="mt-7">
-                  <p class="font-heading font-semibold text-xl">
+                <div class="mt-8 pt-6 border-t border-white/10">
+                  <p class="heading-font font-semibold text-xl lg:text-2xl text-white mb-2">
                     Robert
                   </p>
 
-                  <p class="text-sm text-white/60 mt-1">
+                  <p class="text-base text-white/70">
                     15 years of experience
                   </p>
                 </div>
@@ -635,24 +645,24 @@
             <!-- Testimonial 4 -->
             <div class="swiper-slide">
 
-              <div class="max-w-3xl mx-auto text-center bg-white/5 border border-white/10 rounded-lg p-8">
+              <div
+                class="max-w-3xl mx-auto text-center bg-white/5 border border-white/10 rounded-lg px-8 py-10 lg:px-12 lg:py-12">
 
-                <span class="block font-heading text-6xl lg:text-7xl leading-none text-secondary mb-4">
+                <span class="block heading-font text-5xl lg:text-6xl leading-none text-secondary mb-6">
                   &ldquo;
                 </span>
 
-                <blockquote class="text-xl lg:text-2xl leading-8 lg:leading-9">
-                  The biggest thing for me is having a company that respects
-                  my experience and keeps me moving. That's what I've found
-                  here.
+                <blockquote class="text-xl lg:text-2xl leading-8 lg:leading-9 text-white">
+                  The biggest thing for me is having a company that respects my experience and keeps me moving. That's
+                  what I've found here.
                 </blockquote>
 
-                <div class="mt-7">
-                  <p class="font-heading font-semibold text-xl">
+                <div class="mt-8 pt-6 border-t border-white/10">
+                  <p class="heading-font font-semibold text-xl lg:text-2xl text-white mb-2">
                     David
                   </p>
 
-                  <p class="text-sm text-white/60 mt-1">
+                  <p class="text-base text-white/70">
                     10 years of experience
                   </p>
                 </div>
@@ -665,23 +675,24 @@
             <!-- Testimonial 5 -->
             <div class="swiper-slide">
 
-              <div class="max-w-3xl mx-auto text-center bg-white/5 border border-white/10 rounded-lg p-8">
+              <div
+                class="max-w-3xl mx-auto text-center bg-white/5 border border-white/10 rounded-lg px-8 py-10 lg:px-12 lg:py-12">
 
-                <span class="block font-heading text-6xl lg:text-7xl leading-none text-secondary mb-4">
+                <span class="block heading-font text-5xl lg:text-6xl leading-none text-secondary mb-6">
                   &ldquo;
                 </span>
 
-                <blockquote class="text-xl lg:text-2xl leading-8 lg:leading-9">
-                  I appreciate the straightforward communication and the
-                  quality of the equipment. It makes the job a lot easier.
+                <blockquote class="text-xl lg:text-2xl leading-8 lg:leading-9 text-white">
+                  I appreciate the straightforward communication and the quality of the equipment. It makes the job a
+                  lot easier.
                 </blockquote>
 
-                <div class="mt-7">
-                  <p class="font-heading font-semibold text-xl">
-                    Chris
+                <div class="mt-8 pt-6 border-t border-white/10">
+                  <p class="heading-font font-semibold text-xl lg:text-2xl text-white mb-2">
+                    Christopher
                   </p>
 
-                  <p class="text-sm text-white/60 mt-1">
+                  <p class="text-base text-white/70">
                     7 years of experience
                   </p>
                 </div>
@@ -702,14 +713,16 @@
 
     </section>
     <!-- Testimonials -->
-     
+
     <!-- Apply -->
-    <section id="apply" class="py-[4rem] lg:py-[6rem]">
+    <section id="apply" class="py-[4rem] lg:py-[6rem]" style="display:none">
 
       <div class="mx-auto max-w-[100rem] px-8 text-center">
 
         <h2 class="text-4xl lg:text-6xl parallax-element uppercase">Ready to drive with us?</h2>
-            <p>Two ways to start. Send your info and we'll call you — or answer a few questions and find out right now if you qualify.</p>
+        <span class="block h-1 w-14 bg-secondary mb-8 md:mb-[3rem]"></span>
+        <p>Two ways to start. Send your info and we'll call you — or answer a few questions and find out right now if
+          you qualify.</p>
 
       </div>
 
@@ -720,7 +733,8 @@
         <div class="p-8 lg:p-[5rem] lg:pl-[8rem] col-span-6">
           <div class="max-w-[32rem]">
             <h2 class="text-4xl lg:text-6xl parallax-element uppercase">Ready to drive with us?</h2>
-            <p>Two ways to start. Send your info and we'll call you — or answer a few questions and find out right now if you qualify.</p>
+            <p>Two ways to start. Send your info and we'll call you — or answer a few questions and find out right now
+              if you qualify.</p>
             <div class="flex items-center gap-8 justify-between text-center pt-7 text-primary">
               <div>
                 <strong class="block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow">40</strong>
@@ -745,97 +759,162 @@
             src="/images/who-we-are.png" alt="Who We Are"></div>
         <!-- Right Side -->
 
-        </div>
+      </div>
 
     </section>
     <!-- Apply -->
 
     <!-- Contact -->
-    <section id="contact" class="py-[4rem] lg:py-[6rem]">
+    <section id="contact" class="py-[4rem] lg:py-[6rem] bg-light">
 
       <div class="mx-auto max-w-[100rem] px-8">
 
-        <div class="text-center max-w-[50rem] mx-auto">
-          <h2 class="font-heading text-4xl lg:text-6xl uppercase mb-7">
-            Let's talk about your shipping needs.
-          </h2>
-          <p>Flatbed capacity out of the Chicago area, [Midwest / 48 states]. [40] trucks hauling [steel, building
-            materials, machinery — our main freight]. Call [phone] or send an inquiry and we'll get back to you [the
-            same day].</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+
+          <!-- Left -->
+          <div class="lg:pt-8">
+
+            <h2 class="text-4xl lg:text-5xl font-bold text-primary uppercase mb-3">
+              Let's talk about your shipping needs.
+            </h2>
+
+            <span class="block h-1 w-14 bg-secondary mb-8 md:mb-[3rem]"></span>
+
+            <p class="max-w-[38rem] leading-7 text-primary/75">
+              Flatbed capacity out of the Chicago area, [Midwest / 48 states].
+              [40] trucks hauling [steel, building materials, machinery — our main
+              freight]. Call [phone] or send an inquiry and we'll get back to you
+              [the same day].
+            </p>
+
+            <!-- Contact detail -->
+            <div class="mt-10 space-y-5">
+
+              <div>
+                <span class="block heading-font text-sm font-semibold uppercase tracking-wide mb-1">
+                  Call us
+                </span>
+
+                <a href="tel:797071888"
+                  class="text-xl font-semibold text-blue-600 underline hover:text-yellow-500 transition-all">
+                  79-707-1888
+                </a>
+              </div>
+
+              <div>
+                <span class="block heading-font text-sm font-semibold uppercase tracking-wide mb-1">
+                  Email
+                </span>
+
+                <a href="mailto:contact@ciatransport.com"
+                  class="text-xl font-semibold text-blue-600 underline hover:text-yellow-500 transition-all">
+                  contact@ciatransport.com
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+          <!-- Left -->
+
+
+          <!-- Right / Form -->
+          <div class="bg-white rounded p-7 lg:p-10">
+
+            <h3 class="heading-font text-2xl lg:text-3xl uppercase mb-8">
+              Request a quote
+            </h3>
+
+            <form>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-7">
+
+                <!-- Name -->
+                <div>
+                  <label for="name" class="block heading-font text-sm font-semibold uppercase tracking-wide mb-2">
+                    Name
+                  </label>
+
+                  <input type="text" id="name" name="name" placeholder="Your name"
+                    class="w-full border-b-2 border-gray-300 bg-transparent px-0 py-4 text-base outline-none transition-colors focus:border-secondary placeholder:text-gray-400"
+                    required>
+                </div>
+
+
+                <!-- Company -->
+                <div>
+                  <label for="company" class="block heading-font text-sm font-semibold uppercase tracking-wide mb-2">
+                    Company
+                  </label>
+
+                  <input type="text" id="company" name="company" placeholder="Company name"
+                    class="w-full border-b-2 border-gray-300 bg-transparent px-0 py-4 text-base outline-none transition-colors focus:border-secondary placeholder:text-gray-400">
+                </div>
+
+
+                <!-- Email -->
+                <div>
+                  <label for="email" class="block heading-font text-sm font-semibold uppercase tracking-wide mb-2">
+                    Email
+                  </label>
+
+                  <input type="email" id="email" name="email" placeholder="you@company.com"
+                    class="w-full border-b-2 border-gray-300 bg-transparent px-0 py-4 text-base outline-none transition-colors focus:border-secondary placeholder:text-gray-400"
+                    required>
+                </div>
+
+
+                <!-- Phone -->
+                <div>
+                  <label for="phone" class="block heading-font text-sm font-semibold uppercase tracking-wide mb-2">
+                    Phone
+                  </label>
+
+                  <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555"
+                    class="w-full border-b-2 border-gray-300 bg-transparent px-0 py-4 text-base outline-none transition-colors focus:border-secondary placeholder:text-gray-400">
+                </div>
+
+
+                <!-- Shipping -->
+                <div class="md:col-span-2">
+
+                  <label for="shipping" class="block heading-font text-sm font-semibold uppercase tracking-wide mb-2">
+                    What are you shipping?
+                  </label>
+
+                  <textarea id="shipping" name="shipping" rows="4"
+                    placeholder="Tell us about your freight, pickup location, destination, and any other details..."
+                    class="w-full resize-none border-b-2 border-gray-300 bg-transparent px-0 py-4 text-base outline-none transition-colors focus:border-secondary placeholder:text-gray-400"
+                    required></textarea>
+
+                </div>
+
+              </div>
+
+
+              <!-- Button -->
+              <div class="mt-10">
+
+                <button type="submit"
+                  class="group inline-flex items-center gap-4 bg-secondary px-8 py-4 rounded font-bold uppercase text-primary transition-all duration-300 hover:bg-primary hover:text-white text-base">
+                  Send inquiry
+
+                  <svg class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+
+                </button>
+
+              </div>
+
+            </form>
+
+          </div>
+          <!-- Right / Form -->
+
         </div>
-
-        <!-- Form -->
-        <form class="mt-14 mx-auto max-w-5xl">
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-7">
-
-            <!-- Name -->
-            <div>
-              <label for="name" class="block font-heading text-sm font-semibold uppercase tracking-wide mb-2">
-                Name
-              </label>
-              <input type="text" id="name" name="name" placeholder="Your name"
-                class="w-full border-b-2 border-gray-300 bg-transparent px-0 py-4 text-base outline-none transition-colors focus:border-[#F2C300] placeholder:text-gray-400"
-                required>
-            </div>
-
-            <!-- Company -->
-            <div>
-              <label for="company" class="block font-heading text-sm font-semibold uppercase tracking-wide mb-2">
-                Company
-              </label>
-              <input type="text" id="company" name="company" placeholder="Company name"
-                class="w-full border-b-2 border-gray-300 bg-transparent px-0 py-4 text-base outline-none transition-colors focus:border-[#F2C300]">
-            </div>
-
-            <!-- Email -->
-            <div>
-              <label for="email" class="block font-heading text-sm font-semibold uppercase tracking-wide mb-2">
-                Email
-              </label>
-              <input type="email" id="email" name="email" placeholder="you@company.com"
-                class="w-full border-b-2 border-gray-300 bg-transparent px-0 py-4 text-base outline-none transition-colors focus:border-[#F2C300] placeholder:text-gray-400"
-                required>
-            </div>
-
-            <!-- Phone -->
-            <div>
-              <label for="phone" class="block font-heading text-sm font-semibold uppercase tracking-wide mb-2">
-                Phone
-              </label>
-              <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555"
-                class="w-full border-b-2 border-gray-300 bg-transparent px-0 py-4 text-base outline-none transition-colors focus:border-[#F2C300] placeholder:text-gray-400">
-            </div>
-
-            <!-- Shipping -->
-            <div class="md:col-span-2">
-              <label for="shipping" class="block font-heading text-sm font-semibold uppercase tracking-wide mb-2">
-                What are you shipping?
-              </label>
-              <textarea id="shipping" name="shipping" rows="4"
-                placeholder="Tell us about your freight, pickup location, destination, and any other details..."
-                class="w-full resize-none border-b-2 border-gray-300 bg-transparent px-0 py-4 text-base outline-none transition-colors focus:border-[#F2C300] placeholder:text-gray-400"
-                required></textarea>
-            </div>
-
-          </div>
-
-          <!-- Button -->
-          <div class="mt-10">
-            <button type="submit"
-              class="group inline-flex items-center gap-4 bg-[#F2C300] px-8 py-4 rounded text-sm font-bold uppercase text-primary transition-all duration-300 hover:bg-[#171B4A] hover:text-white">
-              Send inquiry
-
-              <svg class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </button>
-          </div>
-
-        </form>
-        <!-- Form -->
 
       </div>
 
@@ -861,7 +940,7 @@
             <i
               class="bg-[url(/images/icons/map-pin.svg)] inline-block bg-[size:100%] bg-no-repeat w-[1.1rem] h-[1.9rem]"></i>
 
-            <h3 class="font-heading font-semibold uppercase text-xl md:text-2xl">
+            <h3 class="heading-font font-semibold uppercase text-xl md:text-2xl">
               Location
             </h3>
           </div>
@@ -880,7 +959,7 @@
             <i
               class="bg-[url(/images/icons/clock.svg)] inline-block bg-[size:100%] bg-no-repeat w-[1.7rem] h-[1.7rem]"></i>
 
-            <h3 class="font-heading font-semibold uppercase text-xl md:text-2xl">
+            <h3 class="heading-font font-semibold uppercase text-xl md:text-2xl">
               Hours
             </h3>
           </div>
@@ -900,7 +979,7 @@
             <i
               class="bg-[url(/images/icons/envelope.svg)] inline-block bg-[size:100%] bg-no-repeat w-[1.7rem] h-[1.7rem]"></i>
 
-            <h3 class="font-heading font-semibold uppercase text-xl md:text-2xl">
+            <h3 class="heading-font font-semibold uppercase text-xl md:text-2xl">
               Emails
             </h3>
           </div>
@@ -925,7 +1004,7 @@
             <i
               class="bg-[url(/images/icons/phone.svg)] inline-block bg-[size:100%] bg-no-repeat w-[1.7rem] h-[1.7rem]"></i>
 
-            <h3 class="font-heading font-semibold uppercase text-xl md:text-2xl">
+            <h3 class="heading-font font-semibold uppercase text-xl md:text-2xl">
               Phone
             </h3>
           </div>
