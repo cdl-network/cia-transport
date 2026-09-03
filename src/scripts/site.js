@@ -7,7 +7,7 @@ import { parallax } from "./modules/parallax";
 import { scrollToSection } from "./modules/scroll-to-section";
 import { glightbox } from "./modules/glightbox";
 import { initModals } from "./modules/modals";
-import { initPrequalification } from "./modules/prequalification";
+import { prequalification } from "./modules/prequalification";
 import { counter } from "./modules/counter";
 import { forms } from "./modules/forms";
 
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
    scrollToSection();
    glightbox();
    initModals();
-   initPrequalification();
+   prequalification();
    counter();
    forms();
 

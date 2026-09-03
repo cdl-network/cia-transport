@@ -1,7 +1,30 @@
 export function forms() {
   initContactForm();
   initApplicationForm();
-  initPrequalificationForm();
+  prequalificationForm();
+  initPhoneInputs();
+  
+}
+
+
+function initPhoneInputs() {
+    const phoneInputs = document.querySelectorAll(".phone-input");
+
+    phoneInputs.forEach((phoneInput) => {
+        phoneInput.addEventListener("input", (e) => {
+            let value = e.target.value.replace(/\D/g, "").slice(0, 10);
+
+            if (value.length > 6) {
+                value = `(${value.slice(0, 3)}) ${value.slice(3, 6)}-${value.slice(6)}`;
+            } else if (value.length > 3) {
+                value = `(${value.slice(0, 3)}) ${value.slice(3)}`;
+            } else if (value.length > 0) {
+                value = `(${value}`;
+            }
+
+            e.target.value = value;
+        });
+    });
 }
 
 
@@ -132,7 +155,7 @@ function initApplicationForm() {
 // Prequalification
 // ======================================================
 
-function initPrequalificationForm() {
+function prequalificationForm() {
   const form = document.querySelector("#prequalification-form");
 
   if (!form) return;

@@ -144,11 +144,13 @@
               details. We built this company on experienced drivers, and we pay like it.</p>
             <div class="flex items-center gap-8 justify-between text-center pt-7 text-primary">
               <div>
-                <strong class="counter block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow">40</strong>
+                <strong
+                  class="counter block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow">40</strong>
                 <span>Trucks</span>
               </div>
               <div>
-                <strong class="counter block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow">48</strong>
+                <strong
+                  class="counter block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow">48</strong>
                 <span>States</span>
               </div>
               <div>
@@ -749,43 +751,44 @@
         <div class="mt-14 lg:mt-16 md:flex overflow-hidden">
 
           <!-- Apply Now -->
-          <div
-            class="group relative bg-white border border-primary/10 flex min-h-[300px] items-center lg:w-[65%]">
+          <div class="group relative bg-white border border-primary/10 flex min-h-[300px] items-center lg:w-[65%]">
 
             <!-- Accent -->
             <span class="absolute top-0 left-0 w-full h-1 bg-secondary"></span>
 
-            <img data-orientation="left" class="parallax-element hidden lg:block lg:w-[20rem] xl:w-[27rem] h-full object-cover object-right" src="/images/apply-now-img.jpg" alt="Apply Now Image">
+            <img data-orientation="left"
+              class="parallax-element hidden lg:block lg:w-[20rem] xl:w-[27rem] h-full object-cover object-right"
+              src="/images/apply-now-img.jpg" alt="Apply Now Image">
 
             <div class="p-8 md:p-10 lg:p-12">
 
-            <div>
-              <p class="text-secondary font-bold uppercase text-sm tracking-wider mb-3">
-                Apply Now
-              </p>
+              <div>
+                <p class="text-secondary font-bold uppercase text-sm tracking-wider mb-3">
+                  Apply Now
+                </p>
 
-              <h3 class="font-heading font-semibold text-3xl lg:text-4xl text-primary uppercase">
-                We'll contact you
-              </h3>
+                <h3 class="font-heading font-semibold text-3xl lg:text-4xl text-primary uppercase">
+                  We'll contact you
+                </h3>
 
-              <p class="text-base mt-5 max-w-lg text-primary/70 leading-6">
-                Ready to get started? Send us your information and someone from
-                our team will get in touch with you.
-              </p>
-            </div>
+                <p class="text-base mt-5 max-w-lg text-primary/70 leading-6">
+                  Ready to get started? Send us your information and someone from
+                  our team will get in touch with you.
+                </p>
+              </div>
 
-            <div class="mt-8">
-              <button type="button" data-modal-open="application-modal"
-                class="group/btn inline-flex items-center gap-4 bg-secondary px-7 py-4 rounded-sm font-bold uppercase text-primary text-base transition-all duration-300 hover:bg-primary hover:text-white">
-                Apply Now
-                <svg class="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" viewBox="0 0 20 20"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.8"
-                    stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+              <div class="mt-8">
+                <button type="button" data-modal-open="application-modal"
+                  class="group/btn inline-flex items-center gap-4 bg-secondary px-7 py-4 rounded-sm font-bold uppercase text-primary text-base transition-all duration-300 hover:bg-primary hover:text-white">
+                  Apply Now
+                  <svg class="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1"
+                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
 
-              </button>
-            </div>
+                </button>
+              </div>
             </div>
 
           </div>
@@ -898,13 +901,7 @@
             </h3>
 
             <form id="contact-form">
-              <input
-  type="text"
-  name="website"
-  tabindex="-1"
-  autocomplete="off"
-  class="hidden"
-  aria-hidden="true">
+              <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
 
               <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-7">
 
@@ -926,7 +923,8 @@
                     Company <sup class="text-red-700 font-bold text-base top-0 ml-2">*</sup>
                   </label>
 
-                  <input type="text" id="company" name="company" placeholder="Company name"
+                  <input minlength="2" maxlength="100" type="text" id="company" name="company"
+                    placeholder="Company name"
                     class="w-full border-b-2 border-gray-300 bg-transparent px-0 py-4 text-base outline-none transition-colors focus:border-secondary placeholder:text-gray-400">
                 </div>
 
@@ -949,8 +947,11 @@
                     Phone
                   </label>
 
-                  <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555"
-                    class="w-full border-b-2 border-gray-300 bg-transparent px-0 py-4 text-base outline-none transition-colors focus:border-secondary placeholder:text-gray-400">
+                  <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" autocomplete="tel"
+                    inputmode="tel" placeholder="(555) 555-5555" maxlength="20"
+                    pattern="(?:\+1[\s.-]?)?(?:\([2-9]\d{2}\)|[2-9]\d{2})[\s.-]?[2-9]\d{2}[\s.-]?\d{4}"
+                    title="Enter a valid US phone number, e.g. (555) 555-5555"
+                    class="phone-input w-full border-b-2 border-gray-300 bg-transparent px-0 py-4 text-base outline-none transition-colors focus:border-secondary placeholder:text-gray-400">
                 </div>
 
 
@@ -961,7 +962,7 @@
                     What are you shipping? <sup class="text-red-700 font-bold text-base top-0 ml-2">*</sup>
                   </label>
 
-                  <textarea id="shipping" name="shipping" rows="4"
+                  <textarea minlength="10" maxlength="500" id="shipping" name="shipping" rows="4"
                     placeholder="Tell us about your freight, pickup location, destination, and any other details..."
                     class="w-full resize-none border-b-2 border-gray-300 bg-transparent px-0 py-4 text-base outline-none transition-colors focus:border-secondary placeholder:text-gray-400"
                     required></textarea>
@@ -1066,10 +1067,6 @@
           <p class="mt-3 text-base leading-6">
             <a href="mailto:dispatch@ciatransport.com" class="hover:text-secondary transition-colors duration-200">
               dispatch@ciatransport.com
-            </a>
-            <br>
-            <a href="mailto:igor@ciatransport.com" class="hover:text-secondary transition-colors duration-200">
-              igor@ciatransport.com
             </a>
           </p>
 
@@ -1218,13 +1215,7 @@
         <!-- Application Form -->
         <form id="driver-application-form" class="mt-8">
 
-          <input
-  type="text"
-  name="website"
-  tabindex="-1"
-  autocomplete="off"
-  class="hidden"
-  aria-hidden="true">
+          <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-6">
 
@@ -1234,7 +1225,8 @@
                 Name <sup class="text-red-700 font-bold text-base top-0 ml-2">*</sup>
               </label>
 
-              <input type="text" id="apply-name" name="name" placeholder="Your name" required
+              <input minlength="2" maxlength="80" type="text" id="apply-name" name="name" placeholder="Your name"
+                required
                 class="w-full border-0 border-b border-primary/20 bg-transparent px-0 py-3 text-base text-primary placeholder:text-primary/40 focus:border-secondary focus:ring-0 outline-none transition-colors">
             </div>
 
@@ -1245,8 +1237,11 @@
                 Phone
               </label>
 
-              <input type="tel" id="apply-phone" name="phone" placeholder="Your phone number" required
-                class="w-full border-0 border-b border-primary/20 bg-transparent px-0 py-3 text-base text-primary placeholder:text-primary/40 focus:border-secondary focus:ring-0 outline-none transition-colors">
+              <input type="tel" id="apply-phone" name="phone" placeholder="Your phone number" autocomplete="tel"
+                inputmode="tel" placeholder="(555) 555-5555" maxlength="20"
+                pattern="(?:\+1[\s.-]?)?(?:\([2-9]\d{2}\)|[2-9]\d{2})[\s.-]?[2-9]\d{2}[\s.-]?\d{4}"
+                title="Enter a valid US phone number, e.g. (555) 555-5555"
+                class="phone-input w-full border-0 border-b border-primary/20 bg-transparent px-0 py-3 text-base text-primary placeholder:text-primary/40 focus:border-secondary focus:ring-0 outline-none transition-colors">
             </div>
 
 
@@ -1636,97 +1631,76 @@
 
 
           <!-- Result -->
-          <div
-  id="prequal-result"
-  class="hidden mt-8 p-6 md:p-7 border-2 border-secondary bg-secondary/10">
+          <div id="prequal-result" class="hidden mt-8 p-6 md:p-7 border-2 border-secondary bg-secondary/10">
 
-  <div id="prequal-pass" class="hidden">
+            <div id="prequal-pass" class="hidden">
 
-    <div class="flex items-start gap-4">
+              <div class="flex items-start gap-4">
 
-      <div class="shrink-0 w-10 h-10 rounded-full bg-secondary text-primary flex items-center justify-center">
-        <svg
-          class="w-5 h-5"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M5 12.5L9.5 17L19 7"
-            stroke="currentColor"
-            stroke-width="2.5"
-            stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
-      </div>
+                <div class="shrink-0 w-10 h-10 rounded-full bg-secondary text-primary flex items-center justify-center">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12.5L9.5 17L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
 
-      <div>
-        <p class="text-secondary font-bold uppercase tracking-wide text-sm">
-          You're prequalified
-        </p>
+                <div>
+                  <p class="text-secondary font-bold uppercase tracking-wide text-sm">
+                    You're prequalified
+                  </p>
 
-        <p class="text-xl font-semibold mt-2 text-white">
-          Great news — you meet our basic requirements.
-        </p>
+                  <p class="text-xl font-semibold mt-2 text-white">
+                    Great news — you meet our basic requirements.
+                  </p>
 
-        <p class="text-base text-white/70 mt-3">
-          Expect a call within
-          <span data-response-time>one business day</span>.
-        </p>
+                  <p class="text-base text-white/70 mt-3">
+                    Expect a call within
+                    <span data-response-time>one business day</span>.
+                  </p>
 
-        <p class="text-base text-white/70 mt-2">
-          Want to move faster? Call us at
-          <a
-            data-recruiting-phone
-            href="tel:2174928070"
-            class="text-secondary font-semibold hover:underline">
-            217-492-8070
-          </a>.
-        </p>
-      </div>
+                  <p class="text-base text-white/70 mt-2">
+                    Want to move faster? Call us at
+                    <a data-recruiting-phone href="tel:2174928070" class="text-secondary font-semibold hover:underline">
+                      217-492-8070
+                    </a>.
+                  </p>
+                </div>
 
-    </div>
+              </div>
 
-  </div>
+            </div>
 
 
-  <div id="prequal-fail" class="hidden">
+            <div id="prequal-fail" class="hidden">
 
-    <div class="flex items-start gap-4">
+              <div class="flex items-start gap-4">
 
-      <div class="shrink-0 w-10 h-10 rounded-full bg-white/10 text-white flex items-center justify-center">
-        <svg
-          class="w-5 h-5"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M7 7L17 17M17 7L7 17"
-            stroke="currentColor"
-            stroke-width="2.5"
-            stroke-linecap="round" />
-        </svg>
-      </div>
+                <div class="shrink-0 w-10 h-10 rounded-full bg-white/10 text-white flex items-center justify-center">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 7L17 17M17 7L7 17" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                  </svg>
+                </div>
 
-      <div>
-        <p class="text-secondary font-bold uppercase tracking-wide text-sm">
-          Not qualified at this time
-        </p>
+                <div>
+                  <p class="text-secondary font-bold uppercase tracking-wide text-sm">
+                    Not qualified at this time
+                  </p>
 
-        <p class="text-xl font-semibold mt-2 text-white">
-          Based on your answers, we can't move forward right now.
-        </p>
+                  <p class="text-xl font-semibold mt-2 text-white">
+                    Based on your answers, we can't move forward right now.
+                  </p>
 
-        <p class="text-base text-white/70 mt-3">
-          If your situation changes down the road, we'd be glad to hear
-          from you again.
-        </p>
-      </div>
+                  <p class="text-base text-white/70 mt-3">
+                    If your situation changes down the road, we'd be glad to hear
+                    from you again.
+                  </p>
+                </div>
 
-    </div>
+              </div>
 
-  </div>
+            </div>
 
-</div>
+          </div>
 
 
           <!-- Contact Details -->
@@ -1756,7 +1730,8 @@
                   Name
                 </label>
 
-                <input type="text" id="prequal-name" name="prequal-name" placeholder="Your name" required
+                <input minlength="2" maxlength="80" type="text" id="prequal-name" name="prequal-name"
+                  placeholder="Your name" required
                   class="w-full border-0 border-b border-white/20 bg-transparent px-0 py-3 text-base text-white placeholder:text-white/40 focus:border-secondary focus:ring-0 outline-none transition-colors">
               </div>
 
@@ -1768,8 +1743,11 @@
                   Phone
                 </label>
 
-                <input type="tel" id="prequal-phone" name="prequal-phone" placeholder="Your phone number" required
-                  class="w-full border-0 border-b border-white/20 bg-transparent px-0 py-3 text-base text-white placeholder:text-white/40 focus:border-secondary focus:ring-0 outline-none transition-colors">
+                <input type="tel" id="prequal-phone" name="prequal-phone" placeholder="Your phone number"
+                  autocomplete="tel" inputmode="tel" placeholder="(555) 555-5555" maxlength="20"
+                  pattern="(?:\+1[\s.-]?)?(?:\([2-9]\d{2}\)|[2-9]\d{2})[\s.-]?[2-9]\d{2}[\s.-]?\d{4}"
+                  title="Enter a valid US phone number, e.g. (555) 555-5555"
+                  class="phone-input w-full border-0 border-b border-white/20 bg-transparent px-0 py-3 text-base text-white placeholder:text-white/40 focus:border-secondary focus:ring-0 outline-none transition-colors">
               </div>
 
 
@@ -1815,6 +1793,7 @@
   <!-- Scripts -->
   <script src="/src/scripts/site.js" type="module"></script>
   <!-- Scripts -->
+
 
 </body>
 

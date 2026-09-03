@@ -2,8 +2,8 @@
 
 // CIA Transport form recipients
 
-define('CONTACT_EMAIL', 'nishants5788@gmail.com');
-define('RECRUITING_EMAIL', 'nishants5788@gmail.com, nishantsharma_88@yahoo.co.in');
+define('CONTACT_EMAIL', 'alex@ciatransport.com, george@ciatransport.com');
+define('RECRUITING_EMAIL', 'alex@ciatransport.com, george@ciatransport.com');
 
 // Email address shown as the sender.
 // Ideally this should be an email address on the CIA Transport domain.

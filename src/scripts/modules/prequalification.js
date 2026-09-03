@@ -1,4 +1,4 @@
-export function initPrequalification() {
+export function prequalification() {
   const form = document.querySelector("#prequalification-form");
   const modal = form.closest("#prequalification-modal");
 
