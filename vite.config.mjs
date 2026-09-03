@@ -1,6 +1,5 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
-import { cpSync } from "fs";
 
 export default defineConfig({
   build: {
@@ -49,16 +48,6 @@ export default defineConfig({
   },
   base: "./",
   plugins: [
-    {
-      name: "copy-images",
-      closeBundle() {
-        cpSync(
-          resolve(__dirname, "images"),
-          resolve(__dirname, "dist/images"),
-          { recursive: true },
-        );
-      },
-    },
     {
       name: "move-scripts-to-body",
       transformIndexHtml(html) {
