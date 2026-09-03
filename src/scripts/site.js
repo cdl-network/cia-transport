@@ -9,6 +9,8 @@ import { glightbox } from "./modules/glightbox";
 import { initModals } from "./modules/modals";
 import { initPrequalification } from "./modules/prequalification";
 import { counter } from "./modules/counter";
+import { forms } from "./modules/forms";
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -22,5 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
    initModals();
    initPrequalification();
    counter();
+   forms();
 
   });
