@@ -3,9 +3,9 @@
 // ======================================================
 
 export const FORM_ENDPOINTS = {
-    contact: "https://submit-form.com/awMKUPbhG",
-    application: "https://submit-form.com/qTA9kvTfc",
-    prequalification: "https://submit-form.com/F8OiV0sJI"
+    contact: "https://submit-form.com/RfTkwO9M8",
+    application: "https://submit-form.com/EHKBrbWCi",
+    prequalification: "https://submit-form.com/kZDQBYBSv"
 };
 
 
