@@ -1,7 +1,7 @@
 const siteInfo = {
     companyName: "CIA Transport",
 
-    phone: "779-707-18881",
+    phone: "779-707-1888",
     recruitingPhone: "217-492-8070",
 
     email: "dispatch@ciatransport.com",
