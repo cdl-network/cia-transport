@@ -10,10 +10,12 @@ import { initModals } from "./modules/modals";
 import { prequalification } from "./modules/prequalification";
 import { counter } from "./modules/counter";
 import { forms } from "./modules/forms";
+import { initSiteInfo } from "../config/site-info.js";
 
 
 document.addEventListener('DOMContentLoaded', () => {
 
+   initSiteInfo();
    stickyHeader();
    mainNavigation();
    driversCarousel();

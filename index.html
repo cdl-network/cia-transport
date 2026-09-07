@@ -144,17 +144,17 @@
             <div class="flex items-center gap-8 justify-between text-center pt-7 text-primary">
               <div>
                 <strong
-                  class="counter block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow">40</strong>
+                  class="counter block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow" data-site-trucks>40</strong>
                 <span>Trucks</span>
               </div>
               <div>
                 <strong
-                  class="counter block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow">48</strong>
+                  class="counter block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow" data-site-states>48</strong>
                 <span>States</span>
               </div>
               <div>
                 <strong
-                  class="counter block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow">53'</strong>
+                  class="counter block text-5xl lg:text-8xl heading-font font-bold text-secondary text-shadow" data-site-trailer-length>53'</strong>
                 <span>Trailers</span>
               </div>
             </div>
@@ -869,7 +869,7 @@
                   Call us
                 </span>
 
-                <a href="tel:7797071888"
+                <a href="tel:7797071888" data-site-phone
                   class="text-xl font-semibold text-blue-600 underline hover:text-yellow-500 transition-all">
                   779-707-1888
                 </a>
@@ -880,7 +880,7 @@
                   Email
                 </span>
 
-                <a href="mailto:contact@ciatransport.com"
+                <a href="mailto:contact@ciatransport.com" data-site-contact-email
                   class="text-xl font-semibold text-blue-600 underline hover:text-yellow-500 transition-all">
                   contact@ciatransport.com
                 </a>
@@ -1025,7 +1025,7 @@
             </h3>
           </div>
 
-          <p class="mt-3 text-base leading-6">
+          <p class="mt-3 text-base leading-6" data-site-address>
             10 Gougar Rd 2nd Floor Suite 10, Joliet, IL 60432, United States
           </p>
 
@@ -1045,8 +1045,8 @@
           </div>
 
           <p class="mt-3 text-base leading-6">
-            Mon-Fri: 7:00am-6:00pm<br>
-            Sat: 8:00am-12:00pm
+            Mon-Fri: <span data-site-hours-weekdays>7:00am-6:00pm</span><br>
+            Sat: <span data-site-hours-saturday>8:00am-12:00pm</span>
           </p>
 
         </div>
@@ -1065,7 +1065,7 @@
           </div>
 
           <p class="mt-3 text-base leading-6">
-            <a href="mailto:dispatch@ciatransport.com" class="hover:text-secondary transition-colors duration-200">
+            <a href="mailto:dispatch@ciatransport.com" data-site-email class="hover:text-secondary transition-colors duration-200">
               dispatch@ciatransport.com
             </a>
           </p>
@@ -1086,11 +1086,11 @@
           </div>
 
           <p class="mt-3 text-base leading-6">
-            <a href="tel:7797071888" class="hover:text-secondary transition-colors duration-200">
+            <a href="tel:7797071888" class="hover:text-secondary transition-colors duration-200" data-site-phone>
               Phone: 779-707-1888
             </a>
             <br>
-            <a href="tel:2174928070" class="hover:text-secondary transition-colors duration-200">
+            <a href="tel:2174928070" class="hover:text-secondary transition-colors duration-200" data-site-recruiting-phone>
               Recruiting: 217-492-8070
             </a>
           </p>
@@ -1123,7 +1123,7 @@
       <!-- Social -->
       <div class="flex justify-center items-center gap-7 mb-6">
 
-        <a href="#" target="_blank" rel="noopener" aria-label="Facebook" class="group
+        <a href="#" data-site-facebook target="_blank" rel="noopener" aria-label="Facebook" class="group
                transition-all duration-300
                hover:bg-primary hover:-translate-y-1">
 
@@ -1132,7 +1132,7 @@
         </a>
 
 
-        <a href="#" target="_blank" rel="noopener" aria-label="Instagram" class="group
+        <a href="#" data-site-instagram target="_blank" rel="noopener" aria-label="Instagram" class="group
                transition-all duration-300
                hover:bg-primary hover:-translate-y-1">
 
@@ -1151,7 +1151,9 @@
         </p>
 
         <p class="mt-1 text-sm text-primary/70">
+          <span data-site-address>
           10 Gougar RD, Joliet, IL
+          </span>
           <span class="mx-2">·</span>
           DOT #4002400
           <span class="mx-2">·</span>
