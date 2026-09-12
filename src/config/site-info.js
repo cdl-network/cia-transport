@@ -6,7 +6,7 @@ const siteInfo = {
 
     email: "dispatch@ciatransport.com",
 
-    contactEmail: "contact@ciatransport.com",
+    contactEmail: "dispatch@ciatransport.com",
 
     address:
         "10 Gougar Rd 2nd Floor Suite 10, Joliet, IL 60432, United States",
