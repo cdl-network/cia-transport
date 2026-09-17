@@ -17,7 +17,7 @@ const siteInfo = {
     },
 
     social: {
-        facebook: "#",
+        facebook: "https://www.facebook.com/profile.php?id=61570410369484",
         instagram: "#",
     },
 
